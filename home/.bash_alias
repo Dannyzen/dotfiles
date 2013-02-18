@@ -1,0 +1,12 @@
+#!/bin/bash
+#Any Aliases go here
+source $HOME/qa/.bash_alias
+alias vbp='vi $HOME/.bash_alias'
+alias sbp='source $HOME/.bash_alias'
+alias ll='ls -latr --color'
+alias push='$HOME/copy.sh'
+alias big='du -a /var | sort -n -r | head -n 10'
+alias lsd='ls -Gal  --color | grep ^d' #display all directories
+alias gl="git log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit" #git log
+alias ec2='ssh -i Work.pem ubuntu@ec2-23-20-22-136.compute-1.amazonaws.com'
+alias sshdanny='ssh sovolo@dannyrosen.net -p21098'
