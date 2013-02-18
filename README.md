@@ -2,6 +2,6 @@ Hey there, I'm [Danny] (http://www.dannyrosen.net). I'm a QA Guy [@Sailthru] (ht
 
 I'm using:
 
-* 	[homesick] (https://github.com/technicalpickles/homesick) - for bringing down the dotfiles
+* 	[homeshick] (https://github.com/andsens/homeshick) - for bringing down the dotfiles
 *	[git-aware-prompt] (https://github.com/jimeh/git-aware-prompt) - for bash prompt git awareness
 *	[bundler] (https://github.com/tpope/vim-bundler) - for managing my vim plugins
