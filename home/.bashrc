@@ -106,7 +106,7 @@ export CLICOLOR=1
 # Bash Colors
 export CLICOLOR=1
 
-# Using git-aware-prompt (https://github.com/jimeh/git-aware-prompt) - TODO make the ps1 a bit prettier with colors 
+# Using git-aware-prompt (https://github.com/jimeh/git-aware-prompt) - TODO make the ps1 a bit prettier with better defined colors 
 export GITAWAREPROMPT=.plugins/git-aware-prompt/
 source $GITAWAREPROMPT/main.sh
 export PS1="[\t] \[$(tput bold)\]\[$(tput setaf 4)\]\u\[$(tput setaf 1)\]@\h:\[$(tput setaf 6)\]\$PWD\[$txtcyn\]\$git_branch\[$txtylw\]\$git_dirty\[$txtrst\] \$ \[$(tput sgr0)\]"
