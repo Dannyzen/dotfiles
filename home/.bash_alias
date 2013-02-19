@@ -3,7 +3,7 @@
 source $HOME/qa/.bash_alias
 alias vbp='vi $HOME/.bash_alias'
 alias sbp='source $HOME/.bash_alias'
-alias ll='ls -latr --color'
+alias ll='ls -latrG'
 alias push='$HOME/copy.sh'
 alias big='du -a /var | sort -n -r | head -n 10'
 alias lsd='ls -Gal  --color | grep ^d' #display all directories
