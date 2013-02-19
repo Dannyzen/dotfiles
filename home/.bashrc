@@ -80,10 +80,6 @@ fi;
 
 test -e $HOME/agent.sh && source $HOME/agent.sh
 
-
-
-
-
 # Alias definitions.
 # You may want to put all your additions into a separate file like
 # ~/.bash_aliases, instead of adding them here directly.
@@ -100,13 +96,15 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
-# Bash Colors
-export CLICOLOR=1
+source ~/.profile
 
 # Bash Colors
 export CLICOLOR=1
 
-# Using git-aware-prompt (https://github.com/jimeh/git-aware-prompt) - TODO make the ps1 a bit prettier with better defined colors 
-export GITAWAREPROMPT=$HOME/.plugins/git-aware-prompt/
-source $GITAWAREPROMPT/main.sh
+# Bash Colors
+export CLICOLOR=1
+
+#Using git-aware-prompt (https://github.com/jimeh/git-aware-prompt) - TODO make the ps1 a bit prettier with better defined color
+export GITAWAREPROMPT=$HOME/.plugins/git-aware-prompt
+source $GITAWAREPROMPT/main.sh 
 export PS1="[\@]\[$(tput bold)\]\[$(tput setaf 4)\]\u\[$(tput setaf 1)\]@\h:\[$(tput setaf 6)\]\w\[$txtcyn\]\$git_branch\[$txtylw\]\$git_dirty\[$txtrst\] \$ \[$(tput sgr0)\]"
