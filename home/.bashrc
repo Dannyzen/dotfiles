@@ -96,7 +96,13 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
-source ~/.profile
+os=`uname -s`
+
+case $os in
+    "Darwin" )
+        source ~/.profile
+esac
+
 
 # Bash Colors
 export CLICOLOR=1
