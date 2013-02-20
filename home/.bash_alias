@@ -5,7 +5,7 @@ alias vbp='vi $HOME/.bash_alias'
 alias sbp='source $HOME/.bash_alias'
 case $os in
     "Darwin" )
-        alias ls='ls -latrG';;
+        alias ll='ls -latrG';;
     "Linux"  )
         alias ls='ls -latr --color=auto';;
 esac
