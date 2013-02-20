@@ -7,7 +7,7 @@ case $os in
     "Darwin" )
         alias ll='ls -latrG';;
     "Linux"  )
-        alias ls='ls -latr --color=auto';;
+        alias ll='ls -latr --color=auto';;
 esac
 alias push='$HOME/copy.sh'
 alias big='du -a /var | sort -n -r | head -n 10'
