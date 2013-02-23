@@ -12,7 +12,8 @@ esac
 alias push='$HOME/copy.sh'
 alias big='du -a /var | sort -n -r | head -n 10'
 alias lsd='ls -Gal  --color | grep ^d' #display all directories
-alias ga='git add -u'
+alias gitu='git add -u' #add modified tracked files
+alias gitn='git add -n .' #git dry run, sorta 
 alias gl="git log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit" #git log
 alias ec2='ssh -i Work.pem ubuntu@ec2-23-20-22-136.compute-1.amazonaws.com'
 alias sshdanny='ssh sovolo@dannyrosen.net -p21098'
