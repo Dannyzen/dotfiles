@@ -84,6 +84,7 @@ test -e $HOME/agent.sh && source $HOME/agent.sh
 # You may want to put all your additions into a separate file like
 # ~/.bash_aliases, instead of adding them here directly.
 # See /usr/share/doc/bash-doc/examples in the bash-doc package.
+os=`uname -s`
 
 if [ -f ~/.bash_alias ]; then
     . ~/.bash_alias
@@ -96,7 +97,7 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
-os=`uname -s`
+
 
 case $os in
     "Darwin" )
