@@ -4,4 +4,4 @@ I'm using:
 
 * 	[homeshick] (https://github.com/andsens/homeshick) - for bringing down the dotfiles
 *	[git-aware-prompt] (https://github.com/jimeh/git-aware-prompt) - for bash prompt git awareness
-*	[bundler] (https://github.com/tpope/vim-bundler) - for managing my vim plugins
+*	[vundle] (https://github.com/gmarik/vundle) - for managing my vim plugins
