@@ -133,9 +133,6 @@ esac
 # Bash Colors
 export CLICOLOR=1
 
-# Bash Colors
-export CLICOLOR=1
-
 #Using git-aware-prompt (https://github.com/jimeh/git-aware-prompt) - TODO make the ps1 a bit prettier with better defined color
 export GITAWAREPROMPT=$HOME/.plugins/git-aware-prompt
 source $GITAWAREPROMPT/main.sh 
