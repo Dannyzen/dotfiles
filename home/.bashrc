@@ -112,8 +112,8 @@ else
 fi
 
 #OSX love
-os==`uname -s`
-case $OS in
+os=`uname -s`
+case $os in
     "Darwin" )
         source ~/.profile
 esac
