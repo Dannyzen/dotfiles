@@ -111,6 +111,13 @@ else
     fi
 fi
 
+#OSX love
+os==`uname -s`
+case $OS in
+    "Darwin" )
+        source ~/.profile
+esac
+
 if [ -f ~/.bash_alias ]; then
     . ~/.bash_alias
 fi
@@ -121,14 +128,6 @@ fi
 if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
-
-
-
-case $os in
-    "Darwin" )
-        source ~/.profile
-esac
-
 
 # Bash Colors
 export CLICOLOR=1

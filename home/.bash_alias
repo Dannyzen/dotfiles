@@ -3,6 +3,7 @@
 source $HOME/qa/.bash_alias
 alias vbp='vi $HOME/.bash_alias'
 alias sbp='source $HOME/.bash_alias'
+os=`uname -s`
 case $os in
     "Darwin" )
         alias ll='ls -latrG';;
