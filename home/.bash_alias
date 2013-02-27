@@ -18,4 +18,5 @@ alias gitn='git add -n .' #git dry run, sorta
 alias gl="git log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit" #git log
 alias ec2='ssh -i Work.pem ubuntu@ec2-23-20-22-136.compute-1.amazonaws.com'
 alias sshdanny='ssh sovolo@dannyrosen.net -p21098'
+#alias hammer="while true; do parallel curl -- `for i in {1..90}; do echo $1; done`; sleep 1; done"
 alias homesick="$HOME/.homeshick"
