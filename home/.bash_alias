@@ -20,3 +20,15 @@ alias ec2='ssh -i Work.pem ubuntu@ec2-23-20-22-136.compute-1.amazonaws.com'
 alias sshdanny='ssh sovolo@dannyrosen.net -p21098'
 #alias hammer="while true; do parallel curl -- `for i in {1..90}; do echo $1; done`; sleep 1; done"
 alias homesick="$HOME/.homeshick"
+
+# Python virtualenv
+SRC_DIRECTORY="."
+venv () {
+        mkdir $1
+        virtualenv $1
+        source $SRC_DIRECTORY/$1/bin/activate;
+        cd $SRC_DIRECTORY/$1;
+
+# Then run "bash" again to reload the file, and you're done!
+}
+
