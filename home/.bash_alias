@@ -34,7 +34,7 @@ venv () {
         source $SRC_DIRECTORY/$1/bin/activate;
         cd $SRC_DIRECTORY/$1;
 
-# Then run "bash" again to reload the file, and you're done!
+
 }
 
 activate() {
