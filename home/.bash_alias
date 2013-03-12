@@ -32,3 +32,6 @@ venv () {
 # Then run "bash" again to reload the file, and you're done!
 }
 
+activate() {
+    source bin/activate
+}
