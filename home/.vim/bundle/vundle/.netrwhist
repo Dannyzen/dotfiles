@@ -1,8 +1,10 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_cnt =8
 let g:netrw_dirhist_1='/home/danny/.homesick/repos/Environment/.git/modules'
 let g:netrw_dirhist_2='/home/danny/.homesick/repos/Environment/.git/modules/git-aware-prompt'
 let g:netrw_dirhist_3='/Users/danny/.dotfiles'
 let g:netrw_dirhist_4='/home/danny/Python-Fun/dummy_email_generator'
 let g:netrw_dirhist_5='/home/danny/Python-Fun'
 let g:netrw_dirhist_6='/Users/danny/test.perl'
+let g:netrw_dirhist_7='/data/django'
+let g:netrw_dirhist_8='/home/danny/.dotfiles'

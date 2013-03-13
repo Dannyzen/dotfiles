@@ -58,6 +58,7 @@ set noerrorbells
 
 set nobackup
 set noswapfile
-
+set wrapscan
+set wrap
 
 colorscheme seoul 
