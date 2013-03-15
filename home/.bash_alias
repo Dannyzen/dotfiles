@@ -40,3 +40,8 @@ venv () {
 activate() {
     source bin/activate
 }
+
+# word counter
+count() {
+    cat $1 | grep -o "$2" | wc -l
+}
