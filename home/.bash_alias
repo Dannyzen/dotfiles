@@ -8,6 +8,7 @@ case $os in
         alias ll='ls -latr --color=auto';;
 esac
 
+alias s="cd /data/sailthru"
 alias sbp='source $HOME/.bash_alias'
 alias vbp='vi $HOME/.bash_alias'
 alias push='$HOME/copy.sh'
