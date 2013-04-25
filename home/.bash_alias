@@ -1,10 +1,5 @@
 #!/bin/bash
 
-source $HOME/qa/.bash_alias
-
-alias vbp='vi $HOME/.bash_alias'
-
-alias sbp='source $HOME/.bash_alias'
 os=`uname -s`
 case $os in
     "Darwin" )
@@ -13,6 +8,9 @@ case $os in
         alias ll='ls -latr --color=auto';;
 esac
 
+alias s="cd /data/sailthru"
+alias sbp='source $HOME/.bash_alias'
+alias vbp='vi $HOME/.bash_alias'
 alias push='$HOME/copy.sh'
 alias big='du -a /var | sort -n -r | head -n 10'
 alias lsd='ls -Gal  --color | grep ^d' #display all directories
@@ -21,6 +19,8 @@ alias gitn='git add -n .' #git dry run, sorta
 alias gl="git log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit" #git log
 alias ec2='ssh -i Work.pem ubuntu@ec2-23-20-22-136.compute-1.amazonaws.com'
 alias sshdanny='ssh sovolo@dannyrosen.net -p21098'
+alias shell='sudo service kdm stop'
+alias ui='sudo service kdm start'
 
 #alias hammer="while true; do parallel curl -- `for i in {1..90}; do echo $1; done`; sleep 1; done"
 
