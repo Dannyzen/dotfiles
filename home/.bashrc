@@ -1,6 +1,8 @@
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
+# What os am I?
+
 
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
@@ -141,5 +143,3 @@ export CLICOLOR=1
 export GITAWAREPROMPT=$HOME/.plugins/git-aware-prompt
 source $GITAWAREPROMPT/main.sh 
 export PS1="[\@]\[$(tput bold)\]\[$(tput setaf 4)\]\u\[$(tput setaf 1)\]@\h:\[$(tput setaf 6)\]\w\[$txtcyn\]\$git_branch\[$txtylw\]\$git_dirty\[$txtrst\] \$ \[$(tput sgr0)\]"
-source /usr/local/bin/virtualenvwrapper.sh
-
