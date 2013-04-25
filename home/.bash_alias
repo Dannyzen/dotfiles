@@ -45,3 +45,7 @@ activate() {
 count() {
     cat $1 | grep -o "$2" | wc -l
 }
+
+#Should define host and change port
+function iport() { ssh -L 9001:$1:9001 danny@$host; }
+
