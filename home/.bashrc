@@ -118,9 +118,14 @@ case $os in
         source ~/.profile
 esac
 
-if [ -f ~/.bash_alias ]; then
-    . ~/.bash_alias
+if [ -f $HOME/.bash_alias ]; then
+    . $HOME/.bash_alias
 fi
+
+if [ -f $HOME/qa/.bash_alias ]; then
+    . $HOME/qa/.bash_alias
+fi
+
 
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
@@ -136,3 +141,5 @@ export CLICOLOR=1
 export GITAWAREPROMPT=$HOME/.plugins/git-aware-prompt
 source $GITAWAREPROMPT/main.sh 
 export PS1="[\@]\[$(tput bold)\]\[$(tput setaf 4)\]\u\[$(tput setaf 1)\]@\h:\[$(tput setaf 6)\]\w\[$txtcyn\]\$git_branch\[$txtylw\]\$git_dirty\[$txtrst\] \$ \[$(tput sgr0)\]"
+source /usr/local/bin/virtualenvwrapper.sh
+
