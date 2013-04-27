@@ -141,5 +141,3 @@ export CLICOLOR=1
 export GITAWAREPROMPT=$HOME/.plugins/git-aware-prompt
 source $GITAWAREPROMPT/main.sh 
 export PS1="[\@]\[$(tput bold)\]\[$(tput setaf 4)\]\u\[$(tput setaf 1)\]@\h:\[$(tput setaf 6)\]\w\[$txtcyn\]\$git_branch\[$txtylw\]\$git_dirty\[$txtrst\] \$ \[$(tput sgr0)\]"
-source /usr/local/bin/virtualenvwrapper.sh
-
