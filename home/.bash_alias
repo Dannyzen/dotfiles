@@ -14,6 +14,7 @@ alias vbp='vi $HOME/.bash_alias'
 alias push='$HOME/copy.sh'
 alias big='du -a /var | sort -n -r | head -n 10'
 alias lsd='ls -Gal  --color | grep ^d' #display all directories
+alias portscan='sudo nmap -T Aggressive -A -v 127.0.0.1 -p 1-65000'
 alias gitu='git add -u' #add modified tracked files
 alias gitn='git add -n .' #git dry run, sorta 
 alias gl="git log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit" #git log
@@ -45,3 +46,6 @@ activate() {
 count() {
     cat $1 | grep -o "$2" | wc -l
 }
+
+#Should define host and change port
+function iport() { ssh -L 9001:$1:9001 danny@$host; }
