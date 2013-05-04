@@ -1,0 +1,7 @@
+[user]
+    name = Danny Rosen
+    email = danny.rosen@gmail.com
+[color]
+    ui = true
+[column]
+    ui = always
