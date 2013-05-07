@@ -48,4 +48,4 @@ count() {
 }
 
 #Should define host and change port
-function iport() { ssh -L 9001:$1:9001 danny@$host; }
+function iport() { ssh -L $2:$1:$2 $name@$gateev; }
