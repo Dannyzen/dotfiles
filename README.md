@@ -3,5 +3,8 @@ Hey there, I'm [Danny] (http://www.dannyrosen.net). I'm a QA Guy [@Sailthru] (ht
 I'm using:
 
 * 	[homeshick] (https://github.com/andsens/homeshick) - for bringing down the dotfiles
-*	[git-aware-prompt] (https://github.com/jimeh/git-aware-prompt) - for bash prompt git awareness
 *	[vundle] (https://github.com/gmarik/vundle) - for managing my vim plugins
+
+*	[zsh] (https://github.com/robbyrussell/oh-my-zsh) - for extending my zsh 
+
+*   [ack-grep] (http://beyondgrep.com/) - for going above and beyond grep
