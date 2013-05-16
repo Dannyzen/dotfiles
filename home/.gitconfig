@@ -3,5 +3,6 @@
     email = danny.rosen@gmail.com
 [color]
     ui = true
+	diff = always
 [column]
     ui = always
