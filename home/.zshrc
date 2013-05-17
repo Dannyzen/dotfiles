@@ -78,5 +78,9 @@ source $ZSH/oh-my-zsh.sh
 source $HOME/.bash_alias
 source $HOME/.apps
 
+if [ -f $HOME/qa/.bash_alias ]; then
+    . $HOME/qa/.bash_alias
+fi
+
 # Customize to your needs...
 export PATH=$PATH:/usr/local/bin/:/usr/bin:/bin:/usr/share/ruby-rvm/bin
