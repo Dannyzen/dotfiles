@@ -2,8 +2,10 @@
 case $os in
     "Darwin" )
         command -v ack >/dev/null 2>&1 || { echo "I need ack" >&2; exit 1; };;
-    "Linux" )
+    "Debian" )
         command -v ack-grep >/dev/null 2>&1 || { echo "I need ack-grep" >&2; exit 1; };;
+    "Cent" )
+        command -v ack >/dev/null 2>&1 || { echo "I need ack-grep" >&2; exit 1; };;
 esac
 
 command -v zsh >/dev/null 2>&1 || { echo "I need zsh" >&2; exit 1; }
