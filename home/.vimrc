@@ -20,7 +20,7 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'goldfeld/vim-seek'
-Bundle 'klen/python-mode'
+" Bundle 'klen/python-mode'
 
 " Disable linting every save
 let g:pymode_lint_write = 0
@@ -61,7 +61,6 @@ set noswapfile
 set wrapscan
 set wrap
 
-set wrap
 set linebreak
 set textwidth=0
 set wrapmargin=0
