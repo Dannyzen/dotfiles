@@ -37,7 +37,8 @@ ZSH_THEME="clean"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 
-plugins=(git python ssh-agent zsh-syntax-highlighting)
+
+plugins=(git python pip ssh-agent zsh-syntax-highlighting)
 
 # OSX handling
 os=`uname -s`
