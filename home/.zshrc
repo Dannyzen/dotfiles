@@ -38,7 +38,6 @@ ZSH_THEME="clean"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 
 plugins=(git python ssh-agent zsh-syntax-highlighting)
-source $ZSH/custom/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh
 
 # OSX handling
 os=`uname -s`
