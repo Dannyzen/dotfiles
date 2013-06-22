@@ -9,6 +9,7 @@ case $os in
 esac
 
 alias s="cd /data/sailthru"
+alias gitrm="git filter-branch -f --tree-filter 'rm -f $1' HEAD" #permanently remove a given file from git
 alias sbp='source $HOME/.bash_alias'
 alias vbp='vi $HOME/.bash_alias'
 alias push='$HOME/copy.sh'
@@ -25,7 +26,6 @@ alias ui='sudo service kdm start'
 
 #alias hammer="while true; do parallel curl -- `for i in {1..90}; do echo $1; done`; sleep 1; done"
 
-alias homesick="$HOME/.homeshick"
 
 # Python virtualenv
 venv () {
