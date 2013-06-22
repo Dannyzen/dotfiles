@@ -1,10 +1,10 @@
 #!/usr/bin/env zsh
 emulate -L zsh
-setopt err_exit no_unset warn_create_global
-#setopt xtrace
-
-git ls-files -z -- '.zsh*' | while read -rd $'\0' file; do
-    echo -n "Syntax checking $file... "
-    zsh -o no_exec -o no_rcs $file
-    echo "OK"
-done
+output=$(source ~/.zshrc 2>&1 1>/dev/null )
+out_leng=$(expr length $output 2>/dev/null ) 
+if [ -z "$out_leng" ]; 
+    then 
+       exit 1 
+    else
+       exit 0 
+fi
