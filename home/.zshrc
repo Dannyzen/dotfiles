@@ -85,7 +85,5 @@ fi
 if [ -f $HOME/.shush ]; then
     . $HOME/.shush
 fi
-<<<<<<< HEAD
-
 # Customize to your needs...
 export PATH=$PATH:/usr/local/bin/:/usr/bin:/bin:/usr/share/ruby-rvm/bin
