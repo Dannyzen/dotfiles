@@ -1,2 +1,2 @@
-language: ruby
-script: source ~/.zshrc
+install: "sudo apt-get install zsh"
+script: ./.travis/run.sh
