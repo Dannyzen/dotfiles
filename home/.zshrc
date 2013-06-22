@@ -36,8 +36,7 @@ ZSH_THEME="clean"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git python ssh-agent)
-source $ZSH/custom/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh
+plugins=(git python pip ssh-agent zsh-syntax-highlighting)
 
 # OSX handling
 os=`uname -s`
@@ -83,5 +82,9 @@ if [ -f $HOME/qa/.bash_alias ]; then
     . $HOME/qa/.bash_alias
 fi
 
+if [ -f $HOME/.shush ]; then
+    . $HOME/.shush
+fi
+#
 # Customize to your needs...
 export PATH=$PATH:/usr/local/bin/:/usr/bin:/bin:/usr/share/ruby-rvm/bin
