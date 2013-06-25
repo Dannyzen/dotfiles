@@ -21,6 +21,7 @@ Bundle 'gmarik/vundle'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'goldfeld/vim-seek'
 Bundle 'klen/python-mode'
+Bundle 'tomtom/tcomment_vim'
 
 " Disable linting every save
 let g:pymode_lint_write = 0
