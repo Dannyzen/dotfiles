@@ -6,3 +6,5 @@
 	diff = always
 [column]
     ui = always
+[push]
+	default = simple
