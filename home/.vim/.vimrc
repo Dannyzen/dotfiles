@@ -1,10 +1,10 @@
 set nocompatible               " be iMproved
-filetype off                   " required!
+filetype plugin on
 
-set rtp+=~/environment/.vim/bundle/vundle/
-
+set rtp+=$DOTFILES_HOME/.vim/bundle/vundle/
 call vundle#rc()
-"
+
+
 " Brief help
 " :BundleList          - list configured bundles
 " :BundleInstall(!)    - install(update) bundles

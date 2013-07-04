@@ -1,5 +1,10 @@
-# Path to your oh-my-zsh configuration.
-ZSH=$HOME/.oh-my-zsh
+#env
+export PATH=$PATH:/usr/local/bin/:/usr/bin:/bin:/usr/share/ruby-rvm/bin
+export REMOTE_DOTFILES=Dannyzen/dotfiles
+export DOTFILES=$HOME/.homesick/repos/${REMOTE_DOTFILES}
+export DOTFILES_HOME=${DOTFILES}/home
+
+ZSH=$DOTFILES_HOME/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -75,8 +80,8 @@ HISTSIZE=10000
 
 # Sourcing
 source $ZSH/oh-my-zsh.sh
-source $HOME/.bash_alias
-source $HOME/.apps
+source $DOTFILES_HOME/.bash_alias
+source $DOTFILES_HOME/.apps
 
 if [ -f $HOME/qa/.bash_alias ]; then
     . $HOME/qa/.bash_alias
@@ -85,5 +90,3 @@ fi
 if [ -f $HOME/.shush ]; then
     . $HOME/.shush
 fi
-# Customize to your needs...
-export PATH=$PATH:/usr/local/bin/:/usr/bin:/bin:/usr/share/ruby-rvm/bin
