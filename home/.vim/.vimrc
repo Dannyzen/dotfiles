@@ -1,7 +1,7 @@
 set nocompatible               " be iMproved
 filetype plugin on
 
-set rtp+=$DOTFILES_HOME/.vim/bundle/vundle/
+set rtp+=$DOTFILES/vundle/
 call vundle#rc()
 
 
