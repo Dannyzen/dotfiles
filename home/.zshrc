@@ -1,5 +1,5 @@
 #env
-export PATH=$PATH:/usr/local/bin/:/usr/bin:/bin:/usr/share/ruby-rvm/bin
+
 export REMOTE_DOTFILES=Dannyzen/dotfiles
 export DOTFILES=$HOME/.homesick/repos/${REMOTE_DOTFILES}
 export DOTFILES_HOME=${DOTFILES}/home
@@ -91,5 +91,6 @@ fi
 if [ -f $HOME/.shush ]; then
     . $HOME/.shush
 fi
-export PATH="$HOME/.rbenv/bin:$PATH"
+
+export PATH=$PATH:/usr/local/bin/:/usr/bin:/bin:/usr/share/ruby-rvm/bin:$HOME/.rbenv/bin
 eval "$(rbenv init -)"
