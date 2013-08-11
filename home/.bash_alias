@@ -11,7 +11,7 @@ esac
 alias s="cd /data/sailthru"
 alias gitrm="git filter-branch -f --tree-filter 'rm -f $1' HEAD" #permanently remove a given file from git
 alias sbp='source $HOME/.bash_alias'
-alias vbp='vi $HOME/.bash_alias'
+:alias vbp='vim $HOME/.bash_alias'
 
 alias big='du -a /var | sort -n -r | head -n 10'
 alias lsd='ls -Gal  --color | grep ^d' #display all directories
@@ -25,7 +25,7 @@ alias sshdanny='ssh sovolo@dannyrosen.net -p21098'
 alias shell='sudo service kdm stop'
 alias ui='sudo service kdm start'
 alias hammer="while true; do parallel curl -- `for i in {1..90}; do echo $1; done`; sleep 1; done"
-
+alias vz="vim $DOTFILES/.zshrc" 
 
 alias push="echo 'Pushing to $REMOTE_DOTFILES' && homesick push $REMOTE_DOTFILES"
 alias symlink="echo 'Symlinking $DOTFILES_HOME to $HOME from $REMOTE_DOTFILES' && homesick symlink $REMOTE_DOTFILES"
