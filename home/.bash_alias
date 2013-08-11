@@ -25,7 +25,7 @@ alias sshdanny='ssh sovolo@dannyrosen.net -p21098'
 alias shell='sudo service kdm stop'
 alias ui='sudo service kdm start'
 alias hammer="while true; do parallel curl -- `for i in {1..90}; do echo $1; done`; sleep 1; done"
-alias vz="vim $DOTFILES/.zshrc" 
+alias vz="vim $DOTFILES_HOME/.zshrc" 
 
 alias push="echo 'Pushing to $REMOTE_DOTFILES' && homesick push $REMOTE_DOTFILES"
 alias symlink="echo 'Symlinking $DOTFILES_HOME to $HOME from $REMOTE_DOTFILES' && homesick symlink $REMOTE_DOTFILES"
