@@ -11,7 +11,7 @@ esac
 alias s="cd /data/sailthru"
 alias gitrm="git filter-branch -f --tree-filter 'rm -f $1' HEAD" #permanently remove a given file from git
 alias sbp='source $HOME/.bash_alias'
-:alias vbp='vim $HOME/.bash_alias'
+alias vbp='vim $HOME/.bash_alias'
 
 alias big='du -a /var | sort -n -r | head -n 10'
 alias lsd='ls -Gal  --color | grep ^d' #display all directories
