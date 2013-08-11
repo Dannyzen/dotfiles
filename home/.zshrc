@@ -73,10 +73,11 @@ setopt SHARE_HISTORY
 setopt HIST_IGNORE_ALL_DUPS
 setopt HIST_REDUCE_BLANKS
 setopt HIST_FIND_NO_DUPS
-
-
 SAVEHIST=10000
 HISTSIZE=10000
+
+#Interactive Comments
+setopt interactivecomments
 
 # Sourcing
 source $ZSH/oh-my-zsh.sh
@@ -90,3 +91,5 @@ fi
 if [ -f $HOME/.shush ]; then
     . $HOME/.shush
 fi
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
