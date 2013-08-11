@@ -79,6 +79,12 @@ HISTSIZE=10000
 #Interactive Comments
 setopt interactivecomments
 
+#Globdots - !. !!! 
+setopt globdots
+
+#Auto cd
+setopt autocd
+
 # Sourcing
 source $ZSH/oh-my-zsh.sh
 source $DOTFILES_HOME/.bash_alias
