@@ -1,5 +1,5 @@
 #env
-export PATH=$PATH:/usr/local/bin/:/usr/bin:/bin:/usr/share/ruby-rvm/bin
+
 export REMOTE_DOTFILES=Dannyzen/dotfiles
 export DOTFILES=$HOME/.homesick/repos/${REMOTE_DOTFILES}
 export DOTFILES_HOME=${DOTFILES}/home
@@ -73,10 +73,17 @@ setopt SHARE_HISTORY
 setopt HIST_IGNORE_ALL_DUPS
 setopt HIST_REDUCE_BLANKS
 setopt HIST_FIND_NO_DUPS
-
-
 SAVEHIST=10000
 HISTSIZE=10000
+
+#Interactive Comments
+setopt interactivecomments
+
+#Globdots - !. !!! 
+setopt globdots
+
+#Auto cd
+setopt autocd
 
 # Sourcing
 source $ZSH/oh-my-zsh.sh
@@ -90,3 +97,6 @@ fi
 if [ -f $HOME/.shush ]; then
     . $HOME/.shush
 fi
+
+export PATH=$PATH:/usr/local/bin/:/usr/bin:/bin:/usr/share/ruby-rvm/bin:$HOME/.rbenv/bin
+eval "$(rbenv init -)"
