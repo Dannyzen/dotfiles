@@ -22,7 +22,8 @@ Bundle 'Lokaltog/vim-easymotion'
 Bundle 'goldfeld/vim-seek'
 Bundle 'klen/python-mode'
 Bundle 'tomtom/tcomment_vim'
-
+Bundle 'pthrasher/conqueterm-vim'
+Bundle 'scrooloose/nerdtree'
 " Disable linting every save
 let g:pymode_lint_write = 0
 
@@ -60,5 +61,9 @@ set noerrorbells
 set nobackup
 set noswapfile
 
+" Nerdtree map to leader z
+map <silent> <leader>z :NERDTree<CR>
+
+" au VimEnter * NERDTreeFind
 
 colorscheme seoul 
