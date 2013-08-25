@@ -20,7 +20,6 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'goldfeld/vim-seek'
-Bundle 'klen/python-mode'
 Bundle 'tomtom/tcomment_vim'
 Bundle 'pthrasher/conqueterm-vim'
 Bundle 'scrooloose/nerdtree'
