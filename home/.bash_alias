@@ -31,6 +31,7 @@ alias push="echo 'Pushing to $REMOTE_DOTFILES' && homesick push $REMOTE_DOTFILES
 alias symlink="echo 'Symlinking $DOTFILES_HOME to $HOME from $REMOTE_DOTFILES' && homesick symlink $REMOTE_DOTFILES"
 alias pull="echo 'Pulling from $REMOTE_DOTFILES' && homesick pull $REMOTE_DOTFILES"
 alias ipython="ipython --config $DOTFILES_HOME/.ipython_config"
+alias cp="/usr/bin/gcp"
 
 # Python virtualenv
 venv () {

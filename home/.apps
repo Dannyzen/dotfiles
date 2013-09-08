@@ -11,3 +11,4 @@ esac
 command -v zsh >/dev/null 2>&1 || { echo "I need zsh" >&2; exit 1; }
 command -v git >/dev/null 2>&1 || { echo "I need git" >&2; exit 1; }
 command -v homesick >/dev/null 2>&1 || { echo "I need homesick" >&2; exit 1; }
+command -v /usr/bin/gcp >/dev/null 2>&1 || { echo "I need gcp" >&2; exit 1; }

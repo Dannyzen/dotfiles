@@ -27,7 +27,6 @@ c = get_config()
 c.InteractiveShellApp.exec_lines = []
 c.InteractiveShellApp.exec_lines.append('%load_ext autoreload')
 c.InteractiveShellApp.exec_lines.append('%autoreload 2')
-c.InteractiveShellApp.exec_lines.append('print "Warning: disable autoreload in ipython_config.py to improve performance." ')
 
 # Enable GUI event loop integration ('qt', 'wx', 'gtk', 'glut', 'pyglet',
 # 'osx').
@@ -166,7 +165,7 @@ c.InteractiveShellApp.exec_lines.append('print "Warning: disable autoreload in i
 # Use colors for displaying information about objects. Because this information
 # is passed through a pager (like 'less'), and some pagers get confused with
 # color codes, this capability can be turned off.
-# c.TerminalInteractiveShell.color_info = True
+c.TerminalInteractiveShell.color_info = True
 
 # A list of ast.NodeTransformer subclass instances, which will be applied to
 # user input before code is run.
@@ -182,7 +181,7 @@ c.InteractiveShellApp.exec_lines.append('print "Warning: disable autoreload in i
 # c.TerminalInteractiveShell.show_rewritten_input = True
 
 # Set the color scheme (NoColor, Linux, or LightBG).
-# c.TerminalInteractiveShell.colors = 'Linux'
+c.TerminalInteractiveShell.colors = 'Linux'
 
 # Autoindent IPython code entered interactively.
 # c.TerminalInteractiveShell.autoindent = True
@@ -330,7 +329,7 @@ c.InteractiveShellApp.exec_lines.append('print "Warning: disable autoreload in i
 # c.PromptManager.in_template = 'In [\\#]: '
 
 #
-# c.PromptManager.color_scheme = 'Linux'
+c.PromptManager.color_scheme = 'Linux'
 
 #------------------------------------------------------------------------------
 # HistoryManager configuration
