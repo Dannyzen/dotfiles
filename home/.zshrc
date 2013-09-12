@@ -1,10 +1,9 @@
 #env
-
 export REMOTE_DOTFILES=Dannyzen/dotfiles
 export DOTFILES=$HOME/.homesick/repos/${REMOTE_DOTFILES}
 export DOTFILES_HOME=${DOTFILES}/home
 
-ZSH=$DOTFILES_HOME/.oh-my-zsh
+ZSH=$DOTFILES/oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
