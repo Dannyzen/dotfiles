@@ -98,4 +98,3 @@ if [ -f $HOME/.shush ]; then
 fi
 
 export PATH=$PATH:/usr/local/bin/:/usr/bin:/bin:/usr/share/ruby-rvm/bin:$HOME/.rbenv/bin
-eval "$(rbenv init -)"
