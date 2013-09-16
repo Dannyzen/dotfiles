@@ -57,6 +57,7 @@ count() {
 }
 
 #Should define host and change port
+#iport() host port
 function iport() { ssh -L $2:$1:$2 $name@$gateev; }
 
 function info() { declare -f $1;}
