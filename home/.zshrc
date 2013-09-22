@@ -3,6 +3,10 @@ export REMOTE_DOTFILES=Dannyzen/dotfiles
 export DOTFILES=$HOME/.homesick/repos/${REMOTE_DOTFILES}
 export DOTFILES_HOME=${DOTFILES}/home
 
+
+#dicey
+export PYTHONUSERBASE=$HOME/.local/lib/python2.7/site-packages
+
 ZSH=$DOTFILES/oh-my-zsh
 
 # Set name of the theme to load.
@@ -97,4 +101,4 @@ if [ -f $HOME/.shush ]; then
     . $HOME/.shush
 fi
 
-export PATH=$PATH:/usr/local/bin/:/usr/bin:/bin:/usr/share/ruby-rvm/bin:$HOME/.rbenv/bin
+export PATH=$PATH:/usr/local/bin/:/usr/bin:/bin:/usr/share/ruby-rvm/bin:$HOME/.rbenv/bin:$PYTHONUSERBASE/bin
