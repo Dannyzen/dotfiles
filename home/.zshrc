@@ -3,9 +3,9 @@ export REMOTE_DOTFILES=Dannyzen/dotfiles
 export DOTFILES=$HOME/.homesick/repos/${REMOTE_DOTFILES}
 export DOTFILES_HOME=${DOTFILES}/home
 
-
 #dicey
-export PYTHONUSERBASE=$HOME/.local/lib/python2.7/site-packages
+export PYTHONUSERBASE=$HOME/.local/lib/python2.7/site-packages/
+export PYTHON_LOCAL_SITE_PACKAGES=$PYTHONUSERBASE/lib/python2.7/site-packages
 
 ZSH=$DOTFILES/oh-my-zsh
 
