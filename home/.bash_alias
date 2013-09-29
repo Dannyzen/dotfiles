@@ -17,6 +17,7 @@ alias big='du -a /var | sort -n -r | head -n 10'
 alias lsd='ls -Gal  --color | grep ^d' #display all directories
 alias portscan='sudo nmap -T Aggressive -A -v 127.0.0.1 -p 1-65000'
 alias gitu='git add -u' #add modified tracked files
+alias gita='git add -A .' #add all files in current path
 alias gitn='git add -n .' #git dry run, sorta 
 alias gl="git log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit" #git log
 alias ec2='ssh -i Work.pem ubuntu@ec2-204-236-205-222.compute-1.amazonaws.com'
@@ -31,6 +32,8 @@ alias push="echo 'Pushing to $REMOTE_DOTFILES' && homesick push $REMOTE_DOTFILES
 alias symlink="echo 'Symlinking $DOTFILES_HOME to $HOME from $REMOTE_DOTFILES' && homesick symlink $REMOTE_DOTFILES"
 alias pull="echo 'Pulling from $REMOTE_DOTFILES' && homesick pull $REMOTE_DOTFILES"
 alias ipython="ipython --config $DOTFILES_HOME/.ipython_config"
+alias lg="git status"
+
 
 if [ -f /usr/bin/gcp ]; then
     alias cp="/usr/bin/gcp"
