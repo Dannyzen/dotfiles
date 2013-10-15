@@ -122,9 +122,9 @@ if [ -f $HOME/.bash_alias ]; then
     . $HOME/.bash_alias
 fi
 
-if [ -f $HOME/qa/.bash_alias ]; then
-    . $HOME/qa/.bash_alias
-fi
+#if [ -f $HOME/qa/.bash_alias ]; then
+#    . $HOME/qa/.bash_alias
+#fi
 
 
 # enable programmable completion features (you don't need to enable
