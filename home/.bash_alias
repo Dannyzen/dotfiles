@@ -34,6 +34,9 @@ alias pull="echo 'Pulling from $REMOTE_DOTFILES' && homesick pull $REMOTE_DOTFIL
 alias ipython="ipython --config $DOTFILES_HOME/.ipython_config"
 alias lg="git status"
 
+#for linovo
+alias bluetooth_off="echo disable | sudo tee /proc/acpi/ibm/bluetooth"
+alias bluetooth_on="echo enable | sudo tee /proc/acpi/ibm/bluetooth"
 
 # Python virtualenv
 venv () {
