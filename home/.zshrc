@@ -72,6 +72,7 @@ zstyle ':completion:*:(all-|)files' ignored-patterns '*?.pyc'
 #autojump tab completion
 autoload -U compinit && compinit
 setopt nolistambiguous #only one tab for autocompletion for 'j'
+
 # History
 setopt APPEND_HISTORY
 setopt SHARE_HISTORY
