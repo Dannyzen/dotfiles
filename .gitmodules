@@ -1,6 +1,6 @@
 [submodule "vundle"]
 	path = vundle
-	url = https://github.com/gmarik/vundle.git
+	url = https://github.com/gmarik/vundle
 [submodule "oh-my-zsh"]
 	path = oh-my-zsh
 	url = https://github.com/robbyrussell/oh-my-zsh
@@ -9,4 +9,4 @@
 	url = https://github.com/zsh-users/zsh-syntax-highlighting
 [submodule "autojump"]
 	path = autojump
-	url = git@github.com:joelthelion/autojump.git
+	url = https://github.com/joelthelion/autojump
