@@ -1,5 +1,5 @@
 #env
-export REMOTE_DOTFILES=Dannyzen/dotfiles
+export REMOTE_DOTFILES=dotfiles
 export DOTFILES=$HOME/.homesick/repos/${REMOTE_DOTFILES}
 export DOTFILES_HOME=${DOTFILES}/home
 
