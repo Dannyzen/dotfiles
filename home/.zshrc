@@ -44,7 +44,7 @@ ZSH_THEME="af-magic"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git python pip ssh-agent vundle zsh-syntax-highlighting)
+plugins=(git python pip ssh-agent vundle autojump zsh-syntax-highlighting)
 
 # OSX handling
 os=`uname -s`
@@ -69,7 +69,9 @@ f() {
 
 zstyle ':completion:*:(all-|)files' ignored-patterns '*?.pyc'
 
-
+#autojump tab completion
+autoload -U compinit && compinit
+setopt nolistambiguous #only one tab for autocompletion for 'j'
 # History
 setopt APPEND_HISTORY
 setopt SHARE_HISTORY
