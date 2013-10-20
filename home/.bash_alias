@@ -35,12 +35,6 @@ alias ipython="ipython --config $DOTFILES_HOME/.ipython_config"
 alias lg="git status"
 
 
-if [ -f /usr/bin/gcp ]; then
-    alias cp="/usr/bin/gcp"
-fi
-    
-
-
 # Python virtualenv
 venv () {
         SRC_DIRECTORY="."
