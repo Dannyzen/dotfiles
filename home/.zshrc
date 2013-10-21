@@ -5,7 +5,7 @@ export DOTFILES_HOME=${DOTFILES}/home
 
 #dicey
 export PYTHONUSERBASE=$HOME/.local/lib/python2.7/site-packages/
-export PYTHON_LOCAL_SITE_PACKAGES=$PYTHONUSERBASE/lib/python2.7/site-packages
+# export PYTHON_LOCAL_SITE_PACKAGES=$PYTHONUSERBASE/lib/python2.7/site-packages
 
 ZSH=$DOTFILES/oh-my-zsh
 
@@ -51,6 +51,8 @@ os=`uname -s`
 case $os in
     "Darwin" )
         source ~/.profile
+        export JAVA_HOME=/Library/Java/Home
+        export EC2_HOME=$HOME/ec2-api-tools-1.6.10.1/
 esac
 
 # Editor
