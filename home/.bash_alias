@@ -36,12 +36,9 @@ alias pull="echo 'Pulling from $REMOTE_DOTFILES' && homesick pull $REMOTE_DOTFIL
 alias ipython="ipython --config $DOTFILES_HOME/.ipython_config"
 alias lg="git status"
 
-
-if [ -f /usr/bin/gcp ]; then
-    alias cp="/usr/bin/gcp"
-fi
-    
-
+#for linovo
+alias bluetooth_off="echo disable | sudo tee /proc/acpi/ibm/bluetooth"
+alias bluetooth_on="echo enable | sudo tee /proc/acpi/ibm/bluetooth"
 
 # Python virtualenv
 venv () {
@@ -59,6 +56,10 @@ activate() {
 # word counter
 count() {
     cat $1 | grep -o "$2" | wc -l
+}
+
+death(){
+kill $(ps aux | grep $1 | awk '{print $2}')
 }
 
 #Should define host and change port
