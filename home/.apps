@@ -8,6 +8,8 @@ case $os in
         command -v ack >/dev/null 2>&1 || { echo "I need ack-grep" >&2;};;
 esac
 
+    
+
 command -v zsh >/dev/null 2>&1 || { echo "I need zsh" >&2;}
 command -v git >/dev/null 2>&1 || { echo "I need git" >&2;}
 command -v homesick >/dev/null 2>&1 || { echo "I need homesick" >&2;}
