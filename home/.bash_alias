@@ -3,7 +3,9 @@
 os=`uname -s`
 case $os in
     "Darwin" )
-        alias ll='ls -latrG';;
+        alias ll='ls -latrG';
+        alias vlc='/Applications/VLC.app/Contents/MacOS/VLC';;
+
     "Linux"  )
         alias ll='ls -latr --color=auto';;
 esac
