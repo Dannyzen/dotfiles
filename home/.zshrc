@@ -74,6 +74,8 @@ zstyle ':completion:*:(all-|)files' ignored-patterns '*?.pyc'
 #autojump tab completion
 autoload -U compinit && compinit
 setopt nolistambiguous #only one tab for autocompletion for 'j'
+[[ -s ~/.autojump/etc/profile.d/autojump.zsh ]] && . ~/.autojump/etc/profile.d/autojump.zsh
+
 
 # History
 setopt APPEND_HISTORY
