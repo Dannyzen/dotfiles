@@ -21,7 +21,6 @@ Bundle 'gmarik/vundle'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'goldfeld/vim-seek'
 Bundle 'tomtom/tcomment_vim'
-Bundle 'pthrasher/conqueterm-vim'
 Bundle 'scrooloose/nerdtree'
 Bundle 'justinmk/vim-sneak'
 " Disable linting every save
