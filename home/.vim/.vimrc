@@ -23,6 +23,7 @@ Bundle 'goldfeld/vim-seek'
 Bundle 'tomtom/tcomment_vim'
 Bundle 'scrooloose/nerdtree'
 Bundle 'justinmk/vim-sneak'
+Bundle 'tpope/vim-surround'
 " Disable linting every save
 let g:pymode_lint_write = 0
 
