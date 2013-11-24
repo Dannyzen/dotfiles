@@ -10,6 +10,7 @@ case $os in
         alias ll='ls -latr --color=auto';;
 esac
 
+alias curlCode="curl -sL -w "%{http_code}\\n" $1 -o /dev/null"
 alias s="cd /data/sailthru"
 alias gitrm="git filter-branch -f --tree-filter 'rm -f $1' HEAD" #permanently remove a given file from git
 alias sbp='source $HOME/.bash_alias'
