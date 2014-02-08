@@ -1,4 +1,4 @@
-set nocompatible               " be iMproved
+set nocompatible
 filetype plugin on
 
 set rtp+=$DOTFILES/vundle/
@@ -24,6 +24,9 @@ Bundle 'tomtom/tcomment_vim'
 Bundle 'scrooloose/nerdtree'
 Bundle 'justinmk/vim-sneak'
 Bundle 'tpope/vim-surround'
+Bundle 'bling/vim-airline'
+Bundle 'edkolev/promptline.vim'
+Bundle 'wellle/targets.vim'
 
 " Disable linting every save
 let g:pymode_lint_write = 0
@@ -65,6 +68,5 @@ set noswapfile
 " Nerdtree map to leader z
 map <silent> <leader>z :NERDTree<CR>
 
-" au VimEnter * NERDTreeFind
-
-colorscheme seoul 
+set laststatus=2
+set t_Co=256
