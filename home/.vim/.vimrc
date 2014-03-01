@@ -27,19 +27,19 @@ Bundle 'tpope/vim-surround'
 Bundle 'bling/vim-airline'
 Bundle 'edkolev/promptline.vim'
 Bundle 'wellle/targets.vim'
+Bundle 'tpope/vim-fugitive'
 
 " Disable linting every save
 let g:pymode_lint_write = 0
 
 
 filetype plugin indent on
-filetype plugin on 
 filetype on
 au VimLeave * if filereadable(".vim/.netrwhist")|call delete(".vim/.netrwhist")|endif
 nmap ,l :set list!
 set pastetoggle=<F2>
 set expandtab
-set tabstop=4 
+set tabstop=2 
 set backspace=indent,eol,start 
 set number
 nmap <silent> ,/ :nohlsearch<CR>
