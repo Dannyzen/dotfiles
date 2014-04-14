@@ -23,7 +23,7 @@ alias gitu='git add -u' #add modified tracked files
 alias gita='git add -A .' #add all files in current path
 alias gitn='git add -n .' #git dry run, sorta 
 alias gl="git log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit" #git log
-alias ec2='ssh -i Work.pem ubuntu@ec2-204-236-205-222.compute-1.amazonaws.com'
+alias ec2='ssh -i Work.pem ubuntu@ec2-184-72-141-89.compute-1.amazonaws.com'
 alias ec2m='mosh --ssh="/usr/bin/ssh -i ~/Work.pem" ubuntu@ec2-23-20-22-136.compute-1.amazonaws.com'
 alias sshdanny='ssh sovolo@dannyrosen.net -p21098'
 alias shell='sudo service kdm stop'
