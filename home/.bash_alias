@@ -34,7 +34,8 @@ alias vz="vim $DOTFILES_HOME/.zshrc"
 alias push="echo 'Pushing to $REMOTE_DOTFILES' && homesick push $REMOTE_DOTFILES"
 alias symlink="echo 'Symlinking $DOTFILES_HOME to $HOME from $REMOTE_DOTFILES' && homesick symlink $REMOTE_DOTFILES"
 alias pull="echo 'Pulling from $REMOTE_DOTFILES' && homesick pull $REMOTE_DOTFILES"
-alias lg="git status"
+alias lg="git status -sb"
+alias sdel="shred -zuvn20"
 
 #for linovo
 alias bluetooth_off="echo disable | sudo tee /proc/acpi/ibm/bluetooth"
