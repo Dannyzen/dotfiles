@@ -6,3 +6,9 @@
 	diff = always
 [column]
     ui = always
+
+[alias]
+    co = checkout
+    cm = commit
+    p = push
+
