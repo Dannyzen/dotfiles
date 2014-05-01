@@ -1,0 +1,77 @@
+#!/bin/bash
+
+os=`uname -s`
+case $os in
+    "Darwin" )
+        alias ll='ls -latrG';
+        alias vlc='/Applications/VLC.app/Contents/MacOS/VLC';;
+
+    "Linux"  )
+        alias ll='ls -latr --color=auto';;
+esac
+
+alias curlCode="curl -sL -w "%{http_code}\\n" $1 -o /dev/null"
+alias s="cd /data/sailthru"
+alias gitrm="git filter-branch -f --tree-filter 'rm -f $1' HEAD" #permanently remove a given file from git
+alias sbp='source $HOME/.bash_alias'
+alias vbp='vim $HOME/.bash_alias'
+
+alias big='du -a /var | sort -n -r | head -n 10'
+alias lsd='ls -Gal  --color | grep ^d' #display all directories
+alias portscan='sudo nmap -T Aggressive -A -v 127.0.0.1 -p 1-65000'
+alias gitu='git add -u' #add modified tracked files
+alias gita='git add -A .' #add all files in current path
+alias gitn='git add -n .' #git dry run, sorta 
+alias gl="git log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit" #git log
+alias shell='sudo service kdm stop'
+alias ui='sudo service kdm start'
+alias hammer="while true; do parallel curl -- `for i in {1..90}; do echo $1; done`; sleep 1; done"
+alias vz="vim $DOTFILES_HOME/.zshrc" 
+
+alias push="echo 'Pushing to $REMOTE_DOTFILES' && homesick push $REMOTE_DOTFILES"
+alias symlink="echo 'Symlinking $DOTFILES_HOME to $HOME from $REMOTE_DOTFILES' && homesick symlink $REMOTE_DOTFILES"
+alias pull="echo 'Pulling from $REMOTE_DOTFILES' && homesick pull $REMOTE_DOTFILES"
+alias lg="git status -sb"
+alias sdel="shred -zuvn20"
+
+#for linovo
+alias bluetooth_off="echo disable | sudo tee /proc/acpi/ibm/bluetooth"
+alias bluetooth_on="echo enable | sudo tee /proc/acpi/ibm/bluetooth"
+
+# Python virtualenv
+venv () {
+        SRC_DIRECTORY="."
+        mkdir $1
+        virtualenv $1
+        source $SRC_DIRECTORY/$1/bin/activate;
+        cd $SRC_DIRECTORY/$1;
+}
+
+activate() {
+    source bin/activate
+}
+
+# word counter
+count() {
+    cat $1 | grep -o "$2" | wc -l
+}
+
+#File Encryption
+encrypt(){
+openssl aes-256-cbc -a -salt -in $1 -out $2
+}
+
+decrypt(){
+openssl aes-256-cbc -d -a -salt -in $1 -out $2
+}
+
+
+death(){
+kill $(ps aux | grep $1 | awk '{print $2}')
+}
+
+#Should define host and change port
+#iport() host port
+function iport() { ssh -L $2:$1:$2 $name@$gateev; }
+
+function info() { declare -f $1;}
