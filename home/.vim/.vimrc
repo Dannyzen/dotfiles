@@ -28,7 +28,6 @@ Bundle 'bling/vim-airline'
 Bundle 'edkolev/promptline.vim'
 Bundle 'wellle/targets.vim'
 Bundle 'tpope/vim-fugitive'
-Bundle 'Valloric/YouCompleteMe'
 Bundle 'sheerun/vim-polygot'
 
 
