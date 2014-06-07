@@ -28,6 +28,9 @@ Bundle 'bling/vim-airline'
 Bundle 'edkolev/promptline.vim'
 Bundle 'wellle/targets.vim'
 Bundle 'tpope/vim-fugitive'
+Bundle 'Valloric/YouCompleteMe'
+Bundle 'sheerun/vim-polygot'
+
 
 " Disable linting every save
 let g:pymode_lint_write = 0
