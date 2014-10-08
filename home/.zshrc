@@ -114,3 +114,5 @@ zstyle :omz:plugins:ssh-agent agent-forwarding on
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+export GREP_OPTIONS=" --color=auto --exclude-dir=.cvs --exclude-dir=.git --exclude-dir=.hg --exclude-dir=.svn --ignore-case"
