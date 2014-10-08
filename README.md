@@ -1,4 +1,4 @@
-Hey there, I'm [Danny] (http://www.dannyrosen.net). I'm a QA Guy [@Sailthru] (http://www.github.com/sailthru) and these are my [dotfiles] (http://dotfiles.github.com/).
+Hey there, I'm [Danny] (http://www.dannyrosen.net). I'm a Product Guy [@Sailthru] (http://www.github.com/sailthru) and these are my [dotfiles] (http://dotfiles.github.com/).
 
 
 [![Build Status](https://travis-ci.org/Dannyzen/dotfiles.png?branch=master)](https://travis-ci.org/Dannyzen/dotfiles)
@@ -6,11 +6,13 @@ Hey there, I'm [Danny] (http://www.dannyrosen.net). I'm a QA Guy [@Sailthru] (ht
 
 I'm using:
 
-*   [travis-ci] (https://travis-ci.org/Dannyzen/dotfiles) - for making sure my .zshrc has a clean stderr 
+*  [travis-ci] (https://travis-ci.org/Dannyzen/dotfiles) - for making sure my .zshrc has a clean stderr 
 
-* 	[homesick] (https://github.com/technicalpickles/homesick) - for bringing down the dotfiles
+* [homesick] (https://github.com/technicalpickles/homesick) - for bringing down the dotfiles
 *	[vundle] (https://github.com/gmarik/vundle) - for managing my vim plugins
 
 *	[oh-my-zsh] (https://github.com/robbyrussell/oh-my-zsh) - for extending my zsh 
 
-*   [ack-grep] (http://beyondgrep.com/) - for going above and beyond grep
+* [ack-grep] (http://beyondgrep.com/) - for going above and beyond grep
+
+* [ranger] (http://ranger.nongnu.org/) - For shell file system browsing
