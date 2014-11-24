@@ -71,10 +71,10 @@ f() {
 
 zstyle ':completion:*:(all-|)files' ignored-patterns '*?.pyc'
 
-#autojump tab completion
-autoload -U compinit && compinit
-setopt nolistambiguous #only one tab for autocompletion for 'j'
-[[ -s ~/.autojump/etc/profile.d/autojump.zsh ]] && . ~/.autojump/etc/profile.d/autojump.zsh
+# #autojump tab completion
+# autoload -U compinit && compinit
+# setopt nolistambiguous #only one tab for autocompletion for 'j'
+# [[ -s ~/.autojump/etc/profile.d/autojump.zsh ]] && . ~/.autojump/etc/profile.d/autojump.zsh
 
 
 # History
@@ -114,3 +114,5 @@ zstyle :omz:plugins:ssh-agent agent-forwarding on
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+export GREP_OPTIONS=" --color=auto --exclude-dir=.cvs --exclude-dir=.git --exclude-dir=.hg --exclude-dir=.svn --ignore-case"
