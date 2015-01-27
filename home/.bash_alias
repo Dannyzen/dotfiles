@@ -39,6 +39,9 @@ alias t="$DOTFILES/todo.txt-cli/todo.sh"
 alias bluetooth_off="echo disable | sudo tee /proc/acpi/ibm/bluetooth"
 alias bluetooth_on="echo enable | sudo tee /proc/acpi/ibm/bluetooth"
 
+#todo_system
+alias t='$DOTFILES/todo.txt-cli/todo.sh' 
+
 # Python virtualenv
 venv () {
         SRC_DIRECTORY="."
@@ -76,3 +79,4 @@ kill $(ps aux | grep $1 | awk '{print $2}')
 function iport() { ssh -L $2:$1:$2 $name@$gateev; }
 
 function info() { declare -f $1;}
+
