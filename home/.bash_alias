@@ -33,6 +33,7 @@ alias symlink="echo 'Symlinking $DOTFILES_HOME to $HOME from $REMOTE_DOTFILES' &
 alias pull="echo 'Pulling from $REMOTE_DOTFILES' && homesick pull $REMOTE_DOTFILES"
 alias lg="git status -sb"
 alias sdel="shred -zuvn20"
+alias t="$DOTFILES/todo.txt-cli/todo.sh"
 
 #for linovo
 alias bluetooth_off="echo disable | sudo tee /proc/acpi/ibm/bluetooth"
