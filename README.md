@@ -6,7 +6,7 @@ Hey there, I'm [Danny] (http://www.dannyrosen.net). I'm a Product Guy [@Sailthru
 
 I'm using:
 
-*  [travis-ci] (https://travis-ci.org/Dannyzen/dotfiles) - for making sure my .zshrc has a clean stderr 
+* [travis-ci] (https://travis-ci.org/Dannyzen/dotfiles) - for making sure my .zshrc has a clean stderr 
 
 * [homesick] (https://github.com/technicalpickles/homesick) - for bringing down the dotfiles
 
