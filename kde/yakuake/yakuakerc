@@ -5,10 +5,9 @@ update_info=yakuake.upd:2.9.9-startupnotification
 Frames=5
 
 [Appearance]
-BackgroundColor=211,211,211
+BackgroundColor=206,206,206
 BackgroundColorOpacity=10
-Skin=plasma-oxygen-panel-mod
-SkinInstalledWithKns=true
+Translucency=true
 
 [Colors]
 CurrentPalette=Forty Colors
@@ -33,6 +32,7 @@ decrease-window-width=Alt+Shift+Right
 increase-window-width=Alt+Shift+Left
 
 [Window]
+DynamicTabTitles=true
 Height=30
 Position=100
 ShowOnAllDesktops=false
