@@ -1,0 +1,39 @@
+[$Version]
+update_info=yakuake.upd:2.9.9-startupnotification
+
+[Animation]
+Frames=5
+
+[Appearance]
+BackgroundColor=211,211,211
+BackgroundColorOpacity=10
+Skin=plasma-oxygen-panel-mod
+SkinInstalledWithKns=true
+
+[Colors]
+CurrentPalette=Forty Colors
+
+[Desktop Entry]
+DefaultProfile=Shell.profile
+
+[DownloadDialog Settings]
+Height 1080=400
+Width 1920=700
+
+[Favorite Profiles]
+Favorites=Shell.profile
+
+[KFileDialog Settings]
+Height 1080=540
+Width 1920=960
+
+[Shortcuts]
+close-active-terminal=Ctrl+W
+decrease-window-width=Alt+Shift+Right
+increase-window-width=Alt+Shift+Left
+
+[Window]
+Height=30
+Position=100
+ShowOnAllDesktops=false
+Width=40
