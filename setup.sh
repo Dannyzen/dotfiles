@@ -3,6 +3,9 @@ sudo gem install homesick
 homesick clone git@github.com:Dannyzen/dotfiles.git 
 homesick symlink 
 vim +BundleInstall +qall
-ln -s $DOTFILES/zsh-syntax-highlighting $ZSH_CUSTOM/zsh-syntax-highlighting
-ln -s $DOTFILES/kde/yakuake/yakuakerc yakuakerc
+ln -s $DOTFILES/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh $ZSH_CUSTOM/zsh-syntax-highlighting.zsh
 ln -s $DOTFILES/kde/yakuake/kns_skins kns_skins
+rm $HOME/.kde/share/apps/konsole/Shell.profile && ln -s $DOTFILES/kde/konsole/Shell.profile $HOME/.kde/share/apps/konsole/Shell.profile
+ln -s $DOTFILES/kde/konsole/kosoleui.rc $HOME/.kde/share/apps/konsole/konsoleui.rc
+ln -s $DOTFILES/kde/konsole/Linux.colorscheme $HOME/.kde/share/apps/konsole/Linux.colorscheme
+ln -s $DOTFILES/kde/yakuake/yakuakerc $HOME/.kde/share/config/yakuakerc
