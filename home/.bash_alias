@@ -75,6 +75,10 @@ death(){
 kill $(ps aux | grep $1 | awk '{print $2}')
 }
 
+kde_alert(){
+   sleep $1m; kdialog --title yo --passivepopup "$2" 10
+}
+
 #Should define host and change port
 #iport() host port
 function iport() { ssh -L $2:$1:$2 $name@$gateev; }
