@@ -34,6 +34,7 @@ alias pull="echo 'Pulling from $REMOTE_DOTFILES' && homesick pull $REMOTE_DOTFIL
 alias lg="git status -sb"
 alias sdel="shred -zuvn20"
 alias t="$DOTFILES/todo.txt-cli/todo.sh"
+alias vi="vim"
 
 #for linovo
 alias bluetooth_off="echo disable | sudo tee /proc/acpi/ibm/bluetooth"
