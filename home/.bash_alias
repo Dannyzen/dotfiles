@@ -35,6 +35,7 @@ alias lg="git status -sb"
 alias sdel="shred -zuvn20"
 alias t="$DOTFILES/todo.txt-cli/todo.sh"
 alias vi="vim"
+alias homesick="$DOTFILES/homeshick/bin/homeshick"
 
 #for linovo
 alias bluetooth_off="echo disable | sudo tee /proc/acpi/ibm/bluetooth"
