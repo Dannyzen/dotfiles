@@ -10,3 +10,6 @@
 [submodule "todo.txt-cli"]
 	path = todo.txt-cli
 	url = https://github.com/dannyzen/todo.txt-cli.git
+[submodule "homeshick"]
+	path = homeshick
+	url = https://github.com/andsens/homeshick.git
