@@ -112,7 +112,10 @@ export PATH=$PATH:/usr/local/bin/:/usr/bin:/bin:/usr/share/ruby-rvm/bin:$HOME/.r
 #agent 
 zstyle :omz:plugins:ssh-agent agent-forwarding on
 
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
+
+# Heroku and go
+export GOPATH=$HOME/go
+export HEROKUPATH="/usr/local/heroku/bin"
+export PATH="$PATH:$GOPATH:$HEROKUPATH"
 
 export GREP_OPTIONS=" --color=auto --exclude-dir=.cvs --exclude-dir=.git --exclude-dir=.hg --exclude-dir=.svn --ignore-case"
