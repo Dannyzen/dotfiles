@@ -18,17 +18,12 @@ call vundle#rc()
 " let Vundle manage Vundle
 " required! 
 Bundle 'gmarik/vundle'
-Bundle 'Lokaltog/vim-easymotion'
-Bundle 'goldfeld/vim-seek'
 Bundle 'tomtom/tcomment_vim'
 Bundle 'scrooloose/nerdtree'
-Bundle 'justinmk/vim-sneak'
-Bundle 'tpope/vim-surround'
 Bundle 'bling/vim-airline'
 Bundle 'edkolev/promptline.vim'
 Bundle 'wellle/targets.vim'
-Bundle 'tpope/vim-fugitive'
-Bundle 'sheerun/vim-polygot'
+
 
 
 " Disable linting every save

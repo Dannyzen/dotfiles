@@ -12,7 +12,7 @@ playlist_add=Meta+A
 prev=Media Previous
 rate1=none
 rate2=none
-rate3=Meta+3
+rate3=none
 rate4=Meta+4
 rate5=Meta+5
 replay=none
@@ -25,8 +25,9 @@ stop_after_current=Meta+Shift+V
 toggleMainWindow=none
 
 [kactivitymanagerd][Global Shortcuts]
-switch-to-activity-859eaae1-0cfb-41a4-9589-e6ba8156d9ed=none
-switch-to-activity-bae31906-2f68-49a6-8a69-145cdfc888bd=none
+switch-to-activity-89154b5f-5ba0-4f01-b7b4-e0f704ecc601=none
+switch-to-activity-c9fb6074-33d3-4491-914b-a2a4699e0c0f=none
+switch-to-activity-fb8e9102-14d8-48d2-9446-569a2a926ab1=none
 
 [kded][Global Shortcuts]
 Decrease Keyboard Brightness=Keyboard Brightness Down
@@ -40,11 +41,15 @@ Toggle Keyboard Backlight=Keyboard Light On/Off
 display=Display
 
 [khotkeys][Global Shortcuts]
-{7b4ecb60-1516-4948-9aeb-b4aecb0474b2}=Meta+T
+{48427ae1-69ec-45b2-a788-d2e85b0c092b}=Suspend
+{ac0950ad-3125-4029-8bd3-113b29981871}=Ctrl+Shift+X
+{adbd00bb-856b-43be-b113-8621a44280cf}=none
+{cb146852-1ab1-4ff4-8dbd-12ae9e017ac2}=none
 {d03619b6-9b3c-48cc-9d9c-a2aadb485550}=Search
-{faf86a2e-7e94-49ec-aaac-e6db0adcbbe0}=Print
+{e4fafce1-d636-4b3c-9cdf-4e3bb1f54696}=none
 
 [klipper][Global Shortcuts]
+clear-history=none
 clipboard_action=Ctrl+Alt+X
 cycleNextAction=none
 cyclePrevAction=none
@@ -64,6 +69,7 @@ Run Command=Alt+F2
 Run Command on clipboard contents=Alt+Shift+F2
 Show System Activity=Ctrl+Esc
 Switch User=Ctrl+Alt+Ins
+baloosearch=none
 bookmarks=none
 desktopsessions=none
 locations=none
@@ -84,17 +90,16 @@ Log Out=Ctrl+Alt+Del
 Log Out Without Confirmation=Ctrl+Alt+Shift+Del
 Reboot Without Confirmation=Ctrl+Alt+Shift+PgUp
 
+[ktorrent][Global Shortcuts]
+queue_suspend=Alt+Shift+P
+show_kt=Alt+Shift+T
+
 [kwin][Global Shortcuts]
 Activate Window Demanding Attention=Ctrl+Alt+A
-Block Global Shortcuts=none
-Cube=Ctrl+F11
-Cylinder=none
 Decrease Opacity=none
 Expose=Ctrl+F9
 ExposeAll=Ctrl+F10
 ExposeClass=Ctrl+F7
-FlipSwitchAll=none
-FlipSwitchCurrent=none
 Increase Opacity=none
 Invert Screen Colors=none
 Kill Window=Ctrl+Alt+Esc
@@ -108,7 +113,6 @@ Remove Window From Group=none
 Setup Window Shortcut=none
 Show Desktop=Meta+D
 ShowDesktopGrid=Ctrl+F8
-Sphere=none
 Suspend Compositing=Alt+Shift+F12
 Switch One Desktop Down=none
 Switch One Desktop Up=none
@@ -212,7 +216,7 @@ Window to Desktop 18=none
 Window to Desktop 19=none
 Window to Desktop 2=Meta+2
 Window to Desktop 20=none
-Window to Desktop 3=none
+Window to Desktop 3=Meta+3
 Window to Desktop 4=none
 Window to Desktop 5=none
 Window to Desktop 6=none
@@ -240,9 +244,10 @@ Next Activity=Meta+Tab
 Previous Activity=Meta+Shift+Tab
 Show Dashboard=Ctrl+F12
 Stop Activity=Meta+S
-SystemTray-Klipper-8=Ctrl+Alt+V
+SystemTray-Klipper-6=Ctrl+Alt+V
 activate widget 1=Battery
-activate widget 4=Meta+R
+activate widget 2=Meta+R
+activate widget 4=none
 manage activities=Meta+Q
 
 [wacomtablet][Global Shortcuts]
@@ -252,3 +257,6 @@ Map to screen 2=Meta+Ctrl+2
 Toggle screen map selection=Meta+Ctrl+M
 Toggle stylus mode=Meta+Ctrl+S
 Toggle touch tool=Meta+Ctrl+T
+
+[yakuake][Global Shortcuts]
+toggle-window-state=Meta+T
