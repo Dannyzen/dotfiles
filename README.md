@@ -1,4 +1,4 @@
-Hey there, I'm [Danny] (http://www.dannyrosen.net). I'm a Product Guy [@Sailthru] (http://www.github.com/sailthru) and these are my [dotfiles] (http://dotfiles.github.com/).
+Hey there, I'm [Danny] (http://www.dannyrosen.net). I'm a Product Guy and these are my [dotfiles] (http://dotfiles.github.com/).
 
 
 [![Build Status](https://travis-ci.org/Dannyzen/dotfiles.png?branch=master)](https://travis-ci.org/Dannyzen/dotfiles)
