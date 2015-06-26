@@ -1,60 +1,34 @@
 [KDE Keyboard Layout Switcher][Global Shortcuts]
 Switch to Next Keyboard Layout=Ctrl+Alt+K
 
-[amarok][Global Shortcuts]
-decreaseVolume=none
-increaseVolume=Meta++
-loveTrack=Meta+L
-mute=Meta+M
-next=Media Next
-play_pause=Media Play
-playlist_add=Meta+A
-prev=Media Previous
-rate1=none
-rate2=none
-rate3=none
-rate4=Meta+4
-rate5=Meta+5
-replay=none
-seek_backward_medium=Meta+Shift+-
-seek_forward_medium=Meta+Shift++
-showNotificationPopup=Meta+O
-skipTrack=none
-stop=Media Stop
-stop_after_current=Meta+Shift+V
-toggleMainWindow=none
+[kcm_touchpad][Global Shortcuts]
+Disable Touchpad=none
+Enable Touchpad=none
+Toggle Touchpad=none
 
-[kactivitymanagerd][Global Shortcuts]
-switch-to-activity-89154b5f-5ba0-4f01-b7b4-e0f704ecc601=none
-switch-to-activity-c9fb6074-33d3-4491-914b-a2a4699e0c0f=none
-switch-to-activity-fb8e9102-14d8-48d2-9446-569a2a926ab1=none
-
-[kded][Global Shortcuts]
+[kded5][Global Shortcuts]
 Decrease Keyboard Brightness=Keyboard Brightness Down
 Decrease Screen Brightness=Monitor Brightness Down
 Hibernate=Hibernate
 Increase Keyboard Brightness=Keyboard Brightness Up
 Increase Screen Brightness=Monitor Brightness Up
 PowerOff=Power Off
+Show System Activity=Ctrl+Esc
 Sleep=Sleep
 Toggle Keyboard Backlight=Keyboard Light On/Off
 display=Display
 
 [khotkeys][Global Shortcuts]
-{48427ae1-69ec-45b2-a788-d2e85b0c092b}=Suspend
-{ac0950ad-3125-4029-8bd3-113b29981871}=Ctrl+Shift+X
-{adbd00bb-856b-43be-b113-8621a44280cf}=none
-{cb146852-1ab1-4ff4-8dbd-12ae9e017ac2}=none
-{d03619b6-9b3c-48cc-9d9c-a2aadb485550}=Search
-{e4fafce1-d636-4b3c-9cdf-4e3bb1f54696}=none
+{3a475115-4589-4a03-926a-782ebff10ea3}=Print
+{d03619b6-9b3c-48cc-9d9c-a2aadb485550}=none
 
 [klipper][Global Shortcuts]
 clear-history=none
-clipboard_action=Ctrl+Alt+X
+clipboard_action=none
 cycleNextAction=none
 cyclePrevAction=none
 edit_clipboard=none
-repeat_action=Ctrl+Alt+R
+repeat_action=none
 show-barcode=none
 show-on-mouse-pos=none
 
@@ -64,41 +38,21 @@ increase_volume=Volume Up
 mute=Volume Mute
 
 [krunner][Global Shortcuts]
-PowerDevil=none
-Run Command=Alt+F2
-Run Command on clipboard contents=Alt+Shift+F2
-Show System Activity=Ctrl+Esc
-Switch User=Ctrl+Alt+Ins
-baloosearch=none
-bookmarks=none
-desktopsessions=none
-locations=none
-nepomuksearch=none
-org.kde.activities=none
-org.kde.windowedwidgets=none
-recentdocuments=none
-services=none
-shell=none
-solid=none
-webshortcuts=none
-windows=none
+run command=Alt+Space; Alt+F2; Search
+run command on clipboard contents=Alt+Shift+F2
 
 [ksmserver][Global Shortcuts]
 Halt Without Confirmation=Ctrl+Alt+Shift+PgDown
-Lock Session=Ctrl+Alt+L
+Lock Session=Ctrl+Alt+L; Screensaver
 Log Out=Ctrl+Alt+Del
 Log Out Without Confirmation=Ctrl+Alt+Shift+Del
 Reboot Without Confirmation=Ctrl+Alt+Shift+PgUp
-
-[ktorrent][Global Shortcuts]
-queue_suspend=Alt+Shift+P
-show_kt=Alt+Shift+T
 
 [kwin][Global Shortcuts]
 Activate Window Demanding Attention=Ctrl+Alt+A
 Decrease Opacity=none
 Expose=Ctrl+F9
-ExposeAll=Ctrl+F10
+ExposeAll=Ctrl+F10; Launch (C)
 ExposeClass=Ctrl+F7
 Increase Opacity=none
 Invert Screen Colors=none
@@ -136,7 +90,7 @@ Switch to Desktop 19=none
 Switch to Desktop 2=Alt+2
 Switch to Desktop 20=none
 Switch to Desktop 3=Alt+3
-Switch to Desktop 4=Alt+4
+Switch to Desktop 4=none
 Switch to Desktop 5=none
 Switch to Desktop 6=none
 Switch to Desktop 7=none
@@ -189,7 +143,7 @@ Window One Desktop to the Left=none
 Window One Desktop to the Right=none
 Window Operations Menu=Alt+F3
 Window Pack Down=none
-Window Pack Left=Meta+Z
+Window Pack Left=none
 Window Pack Right=none
 Window Pack Up=none
 Window Quick Tile Bottom Left=none
@@ -239,24 +193,22 @@ view_actual_size=Meta+0
 view_zoom_in=Meta+=
 view_zoom_out=Meta+-
 
-[plasma-desktop][Global Shortcuts]
-Next Activity=Meta+Tab
-Previous Activity=Meta+Shift+Tab
-Show Dashboard=Ctrl+F12
-Stop Activity=Meta+S
-SystemTray-Klipper-6=Ctrl+Alt+V
-activate widget 1=Battery
-activate widget 2=Meta+R
-activate widget 4=none
+[plasmashell][Global Shortcuts]
+activate widget 2=Alt+F1
+activate widget 5=none
+clear-history=none
+clipboard_action=Ctrl+Alt+X
+cycleNextAction=none
+cyclePrevAction=none
+edit_clipboard=none
 manage activities=Meta+Q
-
-[wacomtablet][Global Shortcuts]
-Map to fullscreen=Meta+Ctrl+F
-Map to screen 1=Meta+Ctrl+1
-Map to screen 2=Meta+Ctrl+2
-Toggle screen map selection=Meta+Ctrl+M
-Toggle stylus mode=Meta+Ctrl+S
-Toggle touch tool=Meta+Ctrl+T
+next activity=Meta+Tab
+previous activity=Meta+Shift+Tab
+repeat_action=Ctrl+Alt+R
+show dashboard=Ctrl+F12
+show-barcode=none
+show-on-mouse-pos=none
+stop current activity=Meta+S
 
 [yakuake][Global Shortcuts]
 toggle-window-state=Meta+T
