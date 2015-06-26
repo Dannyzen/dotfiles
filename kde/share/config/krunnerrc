@@ -1,0 +1,48 @@
+[EdgePositions]
+Offset=0.5
+
+[General]
+PastQueries=KeePass2,JDownloader 2,JDownloader,Firefox Developer Edition Web Browser,,konsole,kate,Yakuake,t,Firefox Web Browser,Shutter,KMag,Chromium Web Browser,1,Dolphin,Klipper,KDE Connect,Energy Saving,KRDC,Kerguelen,Audio and Video Settings,KSnapshot,chrome.js,g,Konsole,t,t,VirtualBox,SpiderOak,FileZilla,keep,chrom,ke,fir,fi,ch,cho,kee,kwal,doge,chr,do,dol,firefox,power,d,desktops,t
+
+[Interface]
+Size=420,500
+
+[PlasmaRunnerManager]
+LaunchCounts=9 services_jdownloader.desktop,2 services_spideroak.desktop,43 services_firefox.desktop,1 services_kde4-kmag.desktop,1 services_kde4-klipper.desktop,6 services_kde4-dolphin.desktop,1 baloosearch_file:68961,1 baloosearch_file:13489,13 services_kde4-krdc.desktop,2 services_kcm_phonon.desktop,2 services_kde4-konsole.desktop,8 services_kde4-ksnapshot.desktop,3 services_kde4-kate.desktop,1 services_dogecoin-qt.desktop,2 services_kde4-kwalletmanager.desktop,1 services_kde4-yakuake.desktop,2 services_kcm_kdeconnect.desktop,1 services_componentchooser.desktop,1 services_filezilla.desktop,3 services_powerdevilprofilesconfig.desktop,1 baloosearch_file:5271,2 services_desktop.desktop,61 services_chromium-browser.desktop,1 services_JDownloader 2-0.desktop,29 services_keepass2.desktop,1 services_shutter.desktop,1 shell_firefox,2 services_virtualbox.desktop
+
+[Plugins]
+DictionaryEnabled=false
+Kill RunnerEnabled=false
+PowerDevilEnabled=false
+baloosearchEnabled=false
+bookmarksEnabled=false
+calculatorEnabled=false
+desktopsessionsEnabled=false
+ktp_contactsEnabled=false
+locationsEnabled=false
+nepomuksearchEnabled=false
+org.kde.activitiesEnabled=false
+org.kde.windowedwidgetsEnabled=false
+placesEnabled=false
+plasma-desktopEnabled=false
+recentdocumentsEnabled=false
+servicesEnabled=true
+shellEnabled=false
+solidEnabled=false
+webshortcutsEnabled=false
+windowsEnabled=false
+
+[TaskDialog]
+Height 768=419
+Width 1366=649
+filterState=0
+headerState=\x00\x00\x00ˇ\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x01\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x0f‹3\x00\x00\x00\t\x00\x00\x00\r\x00\x00\x00d\x00\x00\x00\x0c\x00\x00\x00d\x00\x00\x00\t\x00\x00\x00d\x00\x00\x00\x08\x00\x00\x00d\x00\x00\x00\x07\x00\x00\x00d\x00\x00\x00\x06\x00\x00\x00d\x00\x00\x00\x04\x00\x00\x00d\x00\x00\x00\x03\x00\x00\x00d\x00\x00\x00\x02\x00\x00\x00d\x00\x00\x02Å\x00\x00\x00\x0f\x01\x01\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00dˇˇˇˇ\x00\x00\x00Å\x00\x00\x00\x00\x00\x00\x00\t\x00\x00\x00∑\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00d\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x03\x00\x00\x00\x00\x00\x00\x00I\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x04\x00\x00\x00\x00\x00\x00\x00Q\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00h\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x00\x00\x00\x00\x00\x00\x00d\x00\x00\x00\x01\x00\x00\x00\x00
+ioInformation=5
+ioUnits=1
+normalizeCPUUsage=true
+showCommandLineOptions=false
+showTooltips=true
+showTotals=true
+units=1
+updateIntervalMSecs=2000
+version=5

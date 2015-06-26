@@ -1,14 +1,23 @@
 #!/bin/bash
-sudo gem install homesick 
-homesick clone git@github.com:Dannyzen/dotfiles.git 
-homesick symlink 
-vim +BundleInstall +qall
+
+# link zsh syntax highlighting
 ln -s $DOTFILES/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh $ZSH_CUSTOM/zsh-syntax-highlighting.zsh
-ln -s $DOTFILES/kde/yakuake/kns_skins kns_skins
-rm $HOME/.kde/share/apps/konsole/Shell.profile && ln -s $DOTFILES/kde/konsole/Shell.profile $HOME/.kde/share/apps/konsole/Shell.profile
-ln -s $DOTFILES/kde/konsole/kosoleui.rc $HOME/.kde/share/apps/konsole/konsoleui.rc
-ln -s $DOTFILES/kde/konsole/Linux.colorscheme $HOME/.kde/share/apps/konsole/Linux.colorscheme
-rm $HOME/.kde/share/config/kglobalshortcutsrc && ln -s $DOTFILES/kde/kglobalshortcutsrc $HOME/.kde/share/config/kglobalshortsrc
-rm $HOME/.kde/share/config/yakuakerc && ln -s $DOTFILES/kde/yakuake/yakuakerc $HOME/.kde/share/config/yakuakerc
+
+# link app configs to dotfiles
+ln -s $DOTFILES/kde/share/apps/konsole $HOME/.kde/share/apps/konsole 
+ln -s $DOTFILES/kde/share/apps/yakuake $HOME/.kde/share/apps/yakuake 
+ln -s $DOTFILES/kde/share/apps/dolphin $HOME/.kde/share/apps/dolphin 
+
+
+# link rc configs to dotfiles
+ln -s $DOTFILES/kde/config/konsolerc $HOME/.kde/share/config/konsole
+ln -s $DOTFILES/kde/config/krunnerrc $HOME/.kde/share/config/krunnerrc
+ln -s $DOTFILES/kde/config/dolphinrc $HOME/.kde/share/config/dolphinrc
+ln -s $DOTFILES/kde/config/kglobalshortctsrc $HOME/.kde/share/config/kglobalshortcutsrc
+
+# remove write access
 chmod -w ~/.local/share/recently-used.xbel
 chmod -w ~/.kde/share/apps/RecentDocuments/
+
+# Do wonderful things to vim
+vim +BundleInstall +qall

@@ -1,0 +1,51 @@
+[CompactMode]
+FontWeight=50
+
+[Desktop Entry]
+DefaultProfile=Shell.profile
+
+[DetailsMode]
+FontWeight=50
+
+[Favorite Profiles]
+Favorites=
+
+[General]
+EditableUrl=true
+ShowFullPath=true
+Version=200
+ViewPropsTimestamp=2014,1,16,21,4,31
+
+[IconsMode]
+FontWeight=50
+
+[InformationPanel]
+previewsShown=false
+
+[KPropertiesDialog]
+Height 768=399
+Width 1366=405
+
+[MainWindow]
+Height 1080=1051
+Height 768=459
+MenuBar=Disabled
+State=AAAA/wAAAAD9AAAAAwAAAAAAAAC6AAABpfwCAAAAAvsAAAAWAGYAbwBsAGQAZQByAHMARABvAGMAawAAAAAA/////wAAAAoBAAAD+wAAABQAcABsAGEAYwBlAHMARABvAGMAawEAAAAmAAABpQAAAFABAAADAAAAAQAAAFYAAAGl/AIAAAAB+wAAABAAaQBuAGYAbwBEAG8AYwBrAQAAACYAAAGlAAAAfwEAAAMAAAADAAACpwAAASn8AQAAAAH7AAAAGAB0AGUAcgBtAGkAbgBhAGwARABvAGMAawAAAAAAAAACpwAAAAoBAAADAAABlQAAAaUAAAAEAAAABAAAAAgAAAAI/AAAAAEAAAACAAAAAQAAABYAbQBhAGkAbgBUAG8AbwBsAEIAYQByAQAAAAD/////AAAAAAAAAAA=
+ToolBarsMovable=Disabled
+Width 1366=679
+Width 1920=956
+
+[Open-with settings]
+CompletionMode=5
+History=chromium-browser %U
+
+[PreviewSettings]
+Plugins=directorythumbnail,imagethumbnail,jpegthumbnail
+
+[SettingsDialog]
+Height 768=349
+Width 1366=512
+
+[ViewPropertiesDialog]
+Height 768=414
+Width 1366=347
