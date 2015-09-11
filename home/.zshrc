@@ -118,4 +118,3 @@ export GOPATH=$HOME/go
 export HEROKUPATH="/usr/local/heroku/bin"
 export PATH="$PATH:$GOPATH:$HEROKUPATH"
 
-export GREP_OPTIONS=" --color=auto --exclude-dir=.cvs --exclude-dir=.git --exclude-dir=.hg --exclude-dir=.svn --ignore-case"
