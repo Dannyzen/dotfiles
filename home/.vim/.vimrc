@@ -23,6 +23,7 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'bling/vim-airline'
 Bundle 'edkolev/promptline.vim'
 Bundle 'wellle/targets.vim'
+Bundle 'junegunn/goyo.vim'
 
 
 
