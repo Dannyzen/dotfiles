@@ -7,7 +7,7 @@ case $os in
         alias vlc='/Applications/VLC.app/Contents/MacOS/VLC';;
 
     "Linux"  )
-        alias ll='ls -latr --color=auto';;
+        alias ll='ls -latrh --color=auto';;
 esac
 
 alias grep="grep --color=auto --exclude-dir=.cvs --exclude-dir=.git --exclude-dir=.hg --exclude-dir=.svn --ignore-case"
