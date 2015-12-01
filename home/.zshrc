@@ -96,8 +96,8 @@ setopt autocd
 
 # Sourcing
 source $ZSH/oh-my-zsh.sh
-source $DOTFILES_HOME/.bash_alias
-source $DOTFILES_HOME/.apps
+source $DOTFILES_HOME/.aliases
+source $DOTFILES_HOME/.funcs
 
 if [ -f $HOME/qa/.bash_alias ]; then
     . $HOME/qa/.bash_alias
@@ -111,10 +111,22 @@ export PATH=$PATH:/usr/local/bin/:/usr/bin:/bin:/usr/share/ruby-rvm/bin:$HOME/.r
 
 #agent 
 zstyle :omz:plugins:ssh-agent agent-forwarding on
+zstyle :omz:plugins:ssh-agent identities air_github
 
 
 # Heroku and go
 export GOPATH=$HOME/go
 export HEROKUPATH="/usr/local/heroku/bin"
 export PATH="$PATH:$GOPATH:$HEROKUPATH"
+
+arrayName=(/usr/local/bin /usr/local/share /usr/local/share/man /usr/local/share/man/man1)
+for ITEM in "${arrayName[@]}"
+    do
+        if [ -O $ITEM ]
+    then
+    else
+        echo "setting rights to $ITEM"
+        sudo chown $USER $ITEM
+    fi
+done
 

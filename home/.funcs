@@ -1,0 +1,43 @@
+#!/bin/bash
+
+# Python virtualenv
+venv () {
+        SRC_DIRECTORY="."
+        mkdir $1
+        virtualenv $1
+        source $SRC_DIRECTORY/$1/bin/activate;
+        cd $SRC_DIRECTORY/$1;
+}
+
+activate() {
+    source bin/activate
+}
+
+# word counter
+count() {
+    cat $1 | grep -o "$2" | wc -l
+}
+
+#File Encryption
+encrypt(){
+openssl aes-256-cbc -a -salt -in $1 -out $2
+}
+
+decrypt(){
+openssl aes-256-cbc -d -a -salt -in $1 -out $2
+}
+
+
+death(){
+kill $(ps aux | grep $1 | awk '{print $2}')
+}
+
+kde_alert(){
+   sleep $1m; kdialog --title yo --passivepopup "$2" 10
+}
+
+#Should define host and change port
+#iport() host port
+function iport() { ssh -L $2:$1:$2 $name@$gateev; }
+
+function info() { declare -f $1;}
