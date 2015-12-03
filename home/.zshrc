@@ -118,15 +118,3 @@ zstyle :omz:plugins:ssh-agent identities air_github
 export GOPATH=$HOME/go
 export HEROKUPATH="/usr/local/heroku/bin"
 export PATH="$PATH:$GOPATH:$HEROKUPATH"
-
-arrayName=(/usr/local/bin /usr/local/share /usr/local/share/man /usr/local/share/man/man1)
-for ITEM in "${arrayName[@]}"
-    do
-        if [ -O $ITEM ]
-    then
-    else
-        echo "setting rights to $ITEM"
-        sudo chown $USER $ITEM
-    fi
-done
-
