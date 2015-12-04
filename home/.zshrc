@@ -44,7 +44,7 @@ ZSH_THEME="af-magic"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git virtualenv python pip ssh-agent vundle zsh-syntax-highlighting)
+plugins=(git virtualenv python pip ssh-agent vundle desk zsh-syntax-highlighting)
 
 # OSX handling
 os=`uname -s`
@@ -118,3 +118,8 @@ zstyle :omz:plugins:ssh-agent identities air_github
 export GOPATH=$HOME/go
 export HEROKUPATH="/usr/local/heroku/bin"
 export PATH="$PATH:$GOPATH:$HEROKUPATH"
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+# Hook for desk activation
+[ -n "$DESK_ENV" ] && source "$DESK_ENV" || true
