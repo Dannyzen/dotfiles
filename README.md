@@ -1,4 +1,4 @@
-Hey there, I'm [Danny] (http://www.dannyrosen.net). I'm a Product Guy @ Movable Ink and these are my [dotfiles] (http://dotfiles.github.com/).
+Hey there, I'm [Danny] (http://www.dannyrosen.net). I'm a Product Guy @ Pivotal Cloud Foundry and these are my [dotfiles] (http://dotfiles.github.com/).
 
 
 [![Build Status](https://travis-ci.org/Dannyzen/dotfiles.png?branch=master)](https://travis-ci.org/Dannyzen/dotfiles)
