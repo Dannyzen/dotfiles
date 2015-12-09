@@ -45,4 +45,3 @@ alias t='$DOTFILES/todo.txt-cli/todo.sh'
 
 alias bp='cd $BUILDPACKS'
 alias fixit='~/fixjamfperms.sh'
-alias bosh='/usr/local/bin/bosh-init'
