@@ -5,6 +5,8 @@ case $os in
     "Darwin" )
         alias ll='ls -latrG';
         alias vlc='/Applications/VLC.app/Contents/MacOS/VLC';
+        alias ack-grep='ack';
+        alias md='macdown';
         alias see='open';;
 
     "Linux"  )
@@ -15,8 +17,8 @@ alias grep="grep --color=auto --exclude-dir=.cvs --exclude-dir=.git --exclude-di
 alias curlCode="curl -sL -w "%{http_code}\\n" $1 -o /dev/null"
 alias s="cd /data/sailthru"
 alias gitrm="git filter-branch -f --tree-filter 'rm -f $1' HEAD" #permanently remove a given file from git
-alias sbp='source $HOME/.bash_alias'
-alias vbp='vim $HOME/.bash_alias'
+alias sbp='source $HOME/.alias'
+alias vbp='vim $HOME/.alias'
 alias zzz='sudo pm-hibernate'
 alias big='du -a /var | sort -n -r | head -n 10'
 alias lsd='ls -Gal  --color | grep ^d' #display all directories
@@ -40,3 +42,7 @@ alias bluetooth_on="echo enable | sudo tee /proc/acpi/ibm/bluetooth"
 
 #todo_system
 alias t='$DOTFILES/todo.txt-cli/todo.sh' 
+
+alias bp='cd $BUILDPACKS'
+alias fixit='~/fixjamfperms.sh'
+alias bosh='/usr/local/bin/bosh-init'

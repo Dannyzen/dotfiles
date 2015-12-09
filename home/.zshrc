@@ -44,7 +44,7 @@ ZSH_THEME="af-magic"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git virtualenv python pip ssh-agent vundle desk zsh-syntax-highlighting)
+plugins=(git virtualenv python pip ssh-agent vundle desk zsh-syntax-highlighting zsh-completions)
 
 # OSX handling
 os=`uname -s`
@@ -71,8 +71,10 @@ f() {
 
 zstyle ':completion:*:(all-|)files' ignored-patterns '*?.pyc'
 
-# #autojump tab completion
-# autoload -U compinit && compinit
+#Zsh-completions 
+
+
+autoload -U compinit && compinit
 # setopt nolistambiguous #only one tab for autocompletion for 'j'
 # [[ -s ~/.autojump/etc/profile.d/autojump.zsh ]] && . ~/.autojump/etc/profile.d/autojump.zsh
 
@@ -123,3 +125,5 @@ export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 # Hook for desk activation
 [ -n "$DESK_ENV" ] && source "$DESK_ENV" || true
+
+export BUILDPACKS="$HOME/dev/buildpackery"
