@@ -44,7 +44,7 @@ ZSH_THEME="af-magic"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git virtualenv python pip ssh-agent vundle zsh-syntax-highlighting)
+plugins=(git virtualenv python pip ssh-agent vundle cloud_foundry zsh-syntax-highlighting)
 
 # OSX handling
 os=`uname -s`
@@ -113,8 +113,6 @@ export PATH=$PATH:/usr/local/bin/:/usr/bin:/bin:/usr/share/ruby-rvm/bin:$HOME/.r
 zstyle :omz:plugins:ssh-agent agent-forwarding on
 
 
-# Heroku and go
+# Go
 export GOPATH=$HOME/go
-export HEROKUPATH="/usr/local/heroku/bin"
-export PATH="$PATH:$GOPATH:$HEROKUPATH"
-
+export PATH="$PATH:$GOPATH"
