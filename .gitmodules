@@ -13,3 +13,9 @@
 [submodule "homeshick"]
 	path = homeshick
 	url = https://github.com/andsens/homeshick.git
+[submodule "desk"]
+	path = desk
+	url = https://github.com/jamesob/desk.git
+[submodule "zsh-completions"]
+	path = zsh-completions
+	url = https://github.com/zsh-users/zsh-completions

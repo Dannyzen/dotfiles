@@ -44,7 +44,7 @@ ZSH_THEME="af-magic"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git virtualenv python pip ssh-agent vundle cloud_foundry zsh-syntax-highlighting)
+plugins=(git virtualenv python pip ssh-agent vundle desk zsh-syntax-highlighting zsh-completions)
 
 # OSX handling
 os=`uname -s`
@@ -71,8 +71,10 @@ f() {
 
 zstyle ':completion:*:(all-|)files' ignored-patterns '*?.pyc'
 
-# #autojump tab completion
-# autoload -U compinit && compinit
+#Zsh-completions 
+
+
+autoload -U compinit && compinit
 # setopt nolistambiguous #only one tab for autocompletion for 'j'
 # [[ -s ~/.autojump/etc/profile.d/autojump.zsh ]] && . ~/.autojump/etc/profile.d/autojump.zsh
 
@@ -96,8 +98,8 @@ setopt autocd
 
 # Sourcing
 source $ZSH/oh-my-zsh.sh
-source $DOTFILES_HOME/.bash_alias
-source $DOTFILES_HOME/.apps
+source $DOTFILES_HOME/.aliases
+source $DOTFILES_HOME/.funcs
 
 if [ -f $HOME/qa/.bash_alias ]; then
     . $HOME/qa/.bash_alias
@@ -107,12 +109,21 @@ if [ -f $HOME/.shush ]; then
     . $HOME/.shush
 fi
 
-export PATH=$PATH:/usr/local/bin/:/usr/bin:/bin:/usr/share/ruby-rvm/bin:$HOME/.rbenv/bin:$PYTHONUSERBASE/bin
 
 #agent 
 zstyle :omz:plugins:ssh-agent agent-forwarding on
+zstyle :omz:plugins:ssh-agent identities air_github
 
 
 # Go
 export GOPATH=$HOME/go
-export PATH="$PATH:$GOPATH"
+
+# More paths
+export HEROKUPATH="/usr/local/heroku/bin"
+export OLDPATH=/usr/local/bin/:/usr/bin:/bin:/usr/share/ruby-rvm/bin:$HOME/.rbenv/bin:$PYTHONUSERBASE/bin
+export RVMPATH="$HOME/.rvm/bin"
+export PATH="$PATH:$OLDPATH:$HOME:$GOPATH:$HEROKUPATH:$RVMPATH"
+export BUILDPACKS="$HOME/dev/buildpackery"
+
+# Hook for desk activation
+[ -n "$DESK_ENV" ] && source "$DESK_ENV" || true
