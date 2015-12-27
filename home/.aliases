@@ -45,3 +45,4 @@ alias t='$DOTFILES/todo.txt-cli/todo.sh'
 
 alias bp='cd $BUILDPACKS'
 alias fixit='~/fixjamfperms.sh'
+alias rs='rsync --progress --compress $1 $2'
