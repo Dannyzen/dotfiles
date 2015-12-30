@@ -1,4 +1,3 @@
-set nocompatible
 filetype plugin on
 
 set rtp+=$DOTFILES/vundle/
@@ -24,10 +23,9 @@ Bundle 'bling/vim-airline'
 Bundle 'edkolev/promptline.vim'
 Bundle 'wellle/targets.vim'
 
-
-
 " Disable linting every save
 let g:pymode_lint_write = 0
+let g:pydiction_location = '~/.vim/bundle/pydiction/complete-dict'
 
 
 filetype plugin indent on

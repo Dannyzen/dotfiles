@@ -52,7 +52,7 @@ case $os in
     "Darwin" )
         source ~/.profile
         export JAVA_HOME=/Library/Java/Home
-        export EC2_HOME=$HOME/ec2-api-tools-1.6.10.1/
+        # export EC2_HOME=$HOME/ec2-api-tools-1.6.10.1/
 esac
 
 # Editor
@@ -122,7 +122,7 @@ export HEROKUPATH="/usr/local/heroku/bin"
 export PATH="$PATH:$GOPATH:$HEROKUPATH"
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-
+export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/"
 # Hook for desk activation
 [ -n "$DESK_ENV" ] && source "$DESK_ENV" || true
 

@@ -1,13 +1,16 @@
 [user]
-	name = Danny Zen
-	email = dannyzen@users.noreply.github.com
+	name = dannyzen
+	email = danny.rosen@gmail.com
 [color]
     ui = true
 	diff = always
 [column]
     ui = always
-
 [alias]
     co = checkout
     cm = commit
     p = push
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
