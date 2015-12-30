@@ -109,21 +109,21 @@ if [ -f $HOME/.shush ]; then
     . $HOME/.shush
 fi
 
-export PATH=$PATH:/usr/local/bin/:/usr/bin:/bin:/usr/share/ruby-rvm/bin:$HOME/.rbenv/bin:$PYTHONUSERBASE/bin
 
 #agent 
 zstyle :omz:plugins:ssh-agent agent-forwarding on
 zstyle :omz:plugins:ssh-agent identities air_github
 
 
-# Heroku and go
+# Go
 export GOPATH=$HOME/go
-export HEROKUPATH="/usr/local/heroku/bin"
-export PATH="$PATH:$GOPATH:$HEROKUPATH"
 
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/"
+# More paths
+export HEROKUPATH="/usr/local/heroku/bin"
+export OLDPATH=/usr/local/bin/:/usr/bin:/bin:/usr/share/ruby-rvm/bin:$HOME/.rbenv/bin:$PYTHONUSERBASE/bin
+export RVMPATH="$HOME/.rvm/bin"
+export PATH="$PATH:$OLDPATH:$HOME:$GOPATH:$HEROKUPATH:$RVMPATH"
+export BUILDPACKS="$HOME/dev/buildpackery"
+
 # Hook for desk activation
 [ -n "$DESK_ENV" ] && source "$DESK_ENV" || true
-
-export BUILDPACKS="$HOME/dev/buildpackery"
