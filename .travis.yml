@@ -1,2 +1,5 @@
-install: "sudo apt-get install zsh"
+addons:
+  apt:
+    packages:
+    - zsh
 script: ./.travis/run.sh
