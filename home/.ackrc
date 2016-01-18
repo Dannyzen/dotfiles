@@ -1,0 +1,24 @@
+# 
+# Edoceo ~/.ackrc
+--break
+--color
+
+# I'm tired of grouping
+# --noheading
+
+# mg
+# --pager=less --long-prompt --no-init --no-lessopen --quiet --quit-if-one-screen --RAW-CONTROL-CHARS --line-numbers
+
+# o
+# --pager=less --no-init --no-lessopen --quit-if-one-screen --line-numbers
+# --pager=less 
+
+# --pager=less -iqRS
+
+# only search with case sensitivity if there is mixed case
+--smart-case
+
+# Sort the files
+--sort-files
+
+--type-set=web=.css,.htm,.html,.php,.phtml,.js
