@@ -125,5 +125,7 @@ export RVMPATH="$HOME/.rvm/bin"
 export PATH="$PATH:$OLDPATH:$HOME:$GOPATH:$HEROKUPATH:$RVMPATH"
 export BUILDPACKS="$HOME/dev/buildpackery"
 
+#RVM sorcery
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 # Hook for desk activation
 [ -n "$DESK_ENV" ] && source "$DESK_ENV" || true

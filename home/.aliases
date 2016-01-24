@@ -39,6 +39,8 @@ alias vi="vim"
 #for linovo
 alias bluetooth_off="echo disable | sudo tee /proc/acpi/ibm/bluetooth"
 alias bluetooth_on="echo enable | sudo tee /proc/acpi/ibm/bluetooth"
+alias louder="pactl set-sink-volume 0 200%"
+
 
 #todo_system
 alias t='$DOTFILES/todo.txt-cli/todo.sh' 
@@ -49,3 +51,6 @@ alias vtodo='vim ~/todos/todo.txt'
 
 alias hg='history | grep $1'
 alias rs='rsync --progress --compress $1 $2'
+
+#cf
+alias cf-login='~/dev/scripts/cf-api.rb'

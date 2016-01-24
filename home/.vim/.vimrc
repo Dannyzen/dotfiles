@@ -22,7 +22,6 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'bling/vim-airline'
 Bundle 'edkolev/promptline.vim'
 Bundle 'wellle/targets.vim'
-Bundle 'junegunn/goyo.vim'
 
 " Disable linting every save
 let g:pymode_lint_write = 0
@@ -66,4 +65,3 @@ map <silent> <leader>z :NERDTree<CR>
 
 set laststatus=2
 set t_Co=256
-map ,v :!open.sh %<.pdf<CR><CR>
