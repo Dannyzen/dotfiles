@@ -3,6 +3,7 @@
 os=`uname -s`
 case $os in
     "Darwin" )
+        alias fixit='~/fixjamfperms.sh'
         alias ll='ls -latrG';
         alias vlc='/Applications/VLC.app/Contents/MacOS/VLC';
         alias ack-grep='ack';
@@ -39,14 +40,15 @@ alias vi="vim"
 #for linovo
 alias bluetooth_off="echo disable | sudo tee /proc/acpi/ibm/bluetooth"
 alias bluetooth_on="echo enable | sudo tee /proc/acpi/ibm/bluetooth"
-alias louder="pactl set-sink-volume 0 200%"
+
+#may need to change to % and not $1
+function volume { pactl set-sink-volume 0 $1 && echo "volume set to $1"}
 
 
-#todo_system
+#todo
 alias t='$DOTFILES/todo.txt-cli/todo.sh' 
 
 alias bp='cd $BUILDPACKS'
-alias fixit='~/fixjamfperms.sh'
 alias vtodo='vim ~/todos/todo.txt'
 
 alias hg='history | grep $1'

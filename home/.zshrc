@@ -44,7 +44,7 @@ ZSH_THEME="af-magic"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git virtualenv python pip ssh-agent vundle desk zsh-syntax-highlighting zsh-completions)
+plugins=(git virtualenv python pip ssh-agent vundle desk zsh-syntax-highlighting cf zsh-completions)
 
 # OSX handling
 os=`uname -s`

@@ -1,0 +1,18 @@
+[Animation]
+Frames=5
+
+[Appearance]
+BackgroundColorOpacity=40
+Skin=default
+
+[Desktop Entry]
+DefaultProfile=Shell.profile
+
+[KFileDialog Settings]
+Height 768=570
+Width 1366=912
+
+[Window]
+Height=80
+Screen=2
+Width=100
