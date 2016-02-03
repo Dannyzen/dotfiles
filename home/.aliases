@@ -36,6 +36,7 @@ alias symlink="echo 'Symlinking $DOTFILES_HOME to $HOME from $REMOTE_DOTFILES' &
 alias pull="echo 'Pulling from $REMOTE_DOTFILES' && homesick pull $REMOTE_DOTFILES"
 alias lg="git status -sb"
 alias vi="vim"
+alias homesick="$HOME/.homesick/repos/homeshick/bin/homeshick"
 
 #for linovo
 alias bluetooth_off="echo disable | sudo tee /proc/acpi/ibm/bluetooth"

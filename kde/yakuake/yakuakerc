@@ -9,8 +9,10 @@ Skin=default
 DefaultProfile=Shell.profile
 
 [KFileDialog Settings]
+Height 1200=585
 Height 768=570
 Width 1366=912
+Width 1920=960
 
 [Window]
 Height=80
