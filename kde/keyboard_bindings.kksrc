@@ -1,12 +1,4 @@
 [KDE Keyboard Layout Switcher][Global Shortcuts]
-Switch to Next Keyboard Layout=Ctrl+Alt+K
-
-[kcm_touchpad][Global Shortcuts]
-Disable Touchpad=none
-Enable Touchpad=none
-Toggle Touchpad=none
-
-[kded5][Global Shortcuts]
 Decrease Keyboard Brightness=Keyboard Brightness Down
 Decrease Screen Brightness=Monitor Brightness Down
 Hibernate=Hibernate
@@ -15,12 +7,20 @@ Increase Screen Brightness=Monitor Brightness Up
 PowerOff=Power Off
 Show System Activity=Ctrl+Esc
 Sleep=Sleep
+Switch to Next Keyboard Layout=Ctrl+Alt+K
 Toggle Keyboard Backlight=Keyboard Light On/Off
 display=Display
-
-[khotkeys][Global Shortcuts]
+{22d0c1b9-3efe-47a3-9233-7dbd1789beb1}=Ctrl+Shift+X
 {3a475115-4589-4a03-926a-782ebff10ea3}=Print
 {d03619b6-9b3c-48cc-9d9c-a2aadb485550}=none
+
+[kaccess][Global Shortcuts]
+Toggle Screen Reader On and Off=Meta+Alt+S
+
+[kcm_touchpad][Global Shortcuts]
+Disable Touchpad=none
+Enable Touchpad=none
+Toggle Touchpad=none
 
 [klipper][Global Shortcuts]
 clear-history=none
@@ -37,6 +37,12 @@ decrease_volume=Volume Down
 increase_volume=Volume Up
 mute=Volume Mute
 
+[knotes][Global Shortcuts]
+hide_all_notes=Alt+Shift+H
+new_note=Alt+Shift+N
+new_note_clipboard=Alt+Shift+C
+show_all_notes=Alt+Shift+S
+
 [krunner][Global Shortcuts]
 run command=Alt+Space; Alt+F2; Search
 run command on clipboard contents=Alt+Shift+F2
@@ -48,12 +54,18 @@ Log Out=Ctrl+Alt+Del
 Log Out Without Confirmation=Ctrl+Alt+Shift+Del
 Reboot Without Confirmation=Ctrl+Alt+Shift+PgUp
 
+[ktorrent][Global Shortcuts]
+queue_suspend=Alt+Shift+P
+show_kt=Alt+Shift+T
+
 [kwin][Global Shortcuts]
 Activate Window Demanding Attention=Ctrl+Alt+A
 Decrease Opacity=none
 Expose=Ctrl+F9
 ExposeAll=Ctrl+F10; Launch (C)
 ExposeClass=Ctrl+F7
+FlipSwitchAll=none
+FlipSwitchCurrent=none
 Increase Opacity=none
 Invert Screen Colors=none
 Kill Window=Ctrl+Alt+Esc
@@ -146,10 +158,12 @@ Window Pack Down=none
 Window Pack Left=none
 Window Pack Right=none
 Window Pack Up=none
+Window Quick Tile Bottom=none
 Window Quick Tile Bottom Left=none
 Window Quick Tile Bottom Right=none
 Window Quick Tile Left=Meta+Left
 Window Quick Tile Right=Meta+Right
+Window Quick Tile Top=none
 Window Quick Tile Top Left=none
 Window Quick Tile Top Right=none
 Window Raise=none
@@ -181,8 +195,8 @@ Window to Next Desktop=none
 Window to Next Screen=none
 Window to Previous Desktop=none
 Window to Previous Screen=none
-Window to Screen 0=none
-Window to Screen 1=none
+Window to Screen 0=Meta+Shift+Down
+Window to Screen 1=Meta+Shift+Up
 Window to Screen 2=none
 Window to Screen 3=none
 Window to Screen 4=none
@@ -193,9 +207,17 @@ view_actual_size=Meta+0
 view_zoom_in=Meta+=
 view_zoom_out=Meta+-
 
+[mediacontrol][Global Shortcuts]
+nextmedia=Media Next
+playpausemedia=Media Play
+previousmedia=Media Previous
+stopmedia=Media Stop
+
 [plasmashell][Global Shortcuts]
-activate widget 2=Alt+F1
+activate widget 44=Alt+F1
 activate widget 5=none
+activate widget 78=none
+activate widget 96=none
 clear-history=none
 clipboard_action=Ctrl+Alt+X
 cycleNextAction=none
