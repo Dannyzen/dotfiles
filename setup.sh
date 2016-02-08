@@ -3,7 +3,6 @@
 # link zsh syntax highlighting
 ln -s $DOTFILES/zsh-syntax-highlighting/ $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
 ln -s $DOTFILES/cf $ZSH_CUSTOM/plugins/cf
-ln -s $DOTFILES/
 
 # link app configs to dotfiles
 ln -s $DOTFILES/kde/share/apps/konsole $HOME/.kde/share/apps/konsole 
