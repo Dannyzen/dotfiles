@@ -16,7 +16,7 @@
 [submodule "desk"]
 	path = desk
 	url = https://github.com/jamesob/desk.git
-[submodule "cf-zsh-autocomplete-plugin"]
+[submodule "cf"]
 	path = cf
 	url = https://github.com/frodenas/cf-zsh-autocomplete-plugin.git
 [submodule "zsh-completions"]
