@@ -38,6 +38,10 @@ alias lg="git status -sb"
 alias vi="vim"
 alias homesick="$HOME/.homesick/repos/homeshick/bin/homeshick"
 
+#cf
+alias cf-login='ruby ~/dev/scripts/cf-api.rb'
+alias woof='echo "building appdog" && go build && cf uninstall-plugin appdog && cf install-plugin -f ~/dev/appdog-cli/appdog-cli'
+
 #for linovo
 alias bluetooth_off="echo disable | sudo tee /proc/acpi/ibm/bluetooth"
 alias bluetooth_on="echo enable | sudo tee /proc/acpi/ibm/bluetooth"
