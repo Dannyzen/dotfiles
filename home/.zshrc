@@ -122,10 +122,11 @@ export GOPATH=$HOME/go
 export HEROKUPATH="/usr/local/heroku/bin"
 export OLDPATH=/usr/local/bin/:/usr/bin:/bin:/usr/share/ruby-rvm/bin:$HOME/.rbenv/bin:$PYTHONUSERBASE/bin
 export RVMPATH="$HOME/.rvm/bin"
-export PATH="$PATH:$OLDPATH:$HOME:$GOPATH:$HEROKUPATH:$RVMPATH"
+export NODE="$HOME/.npm-global/bin"
+export PATH="$PATH:$OLDPATH:$HOME:$GOPATH:$HEROKUPATH:$RVMPATH:$NODE"
 export BUILDPACKS="$HOME/dev/buildpackery"
 
 #RVM sorcery
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
-# Hook for desk activation
-[ -n "$DESK_ENV" ] && source "$DESK_ENV" || true
+# # Hook for desk activation
+# [ -n "$DESK_ENV" ] && source "$DESK_ENV" || true
