@@ -84,6 +84,7 @@ setopt APPEND_HISTORY
 setopt HIST_REDUCE_BLANKS
 setopt HIST_FIND_NO_DUPS
 setopt HIST_IGNORE_DUPS
+unsetopt share_history
 SAVEHIST=10000
 HISTSIZE=10000
 
@@ -130,3 +131,6 @@ export BUILDPACKS="$HOME/dev/buildpackery"
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 # # Hook for desk activation
 # [ -n "$DESK_ENV" ] && source "$DESK_ENV" || true
+
+ZSH_HIGHLIGHT_STYLES[line]='bold'
+setopt no_share_history

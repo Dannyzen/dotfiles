@@ -11,7 +11,8 @@ case $os in
         alias see='open';;
 
     "Linux"  )
-        alias ll='ls -latrh --color=auto';;
+        alias ll='ls -latrh --color=auto';
+        alias pbcopy='xsel --clipboard --input';;
 esac
 
 alias grep="grep --color=auto --exclude-dir=.cvs --exclude-dir=.git --exclude-dir=.hg --exclude-dir=.svn --ignore-case"
