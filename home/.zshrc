@@ -132,5 +132,4 @@ export BUILDPACKS="$HOME/dev/buildpackery"
 # # Hook for desk activation
 # [ -n "$DESK_ENV" ] && source "$DESK_ENV" || true
 
-ZSH_HIGHLIGHT_STYLES[line]='bold'
 setopt no_share_history

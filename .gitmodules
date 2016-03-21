@@ -1,9 +1,6 @@
 [submodule "vundle"]
 	path = vundle
 	url = https://github.com/gmarik/vundle
-[submodule "oh-my-zsh"]
-	path = oh-my-zsh
-	url = https://github.com/dannyzen/oh-my-zsh
 [submodule "zsh-syntax-highlighting"]
 	path = zsh-syntax-highlighting
 	url = https://github.com/zsh-users/zsh-syntax-highlighting
@@ -23,3 +20,6 @@
 	path = zsh-completions
 	url = https://github.com/zsh-users/zsh-completions
 
+[submodule "oh-my-zsh"]
+	path = oh-my-zsh
+	url = git@github.com:Dannyzen/oh-my-zsh.git
