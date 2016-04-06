@@ -23,3 +23,6 @@
 [submodule "oh-my-zsh"]
 	path = oh-my-zsh
 	url = git@github.com:Dannyzen/oh-my-zsh.git
+[submodule "alias-tips"]
+	path = alias-tips
+	url = https://github.com/djui/alias-tips
