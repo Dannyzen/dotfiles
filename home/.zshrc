@@ -128,8 +128,11 @@ export PATH="$PATH:$OLDPATH:$HOME:$GOPATH:$HEROKUPATH:$RVMPATH:$NODE"
 export BUILDPACKS="$HOME/dev/buildpackery"
 
 #RVM sorcery
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+# [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 # # Hook for desk activation
 # [ -n "$DESK_ENV" ] && source "$DESK_ENV" || true
 
 setopt no_share_history
+
+export NVM_DIR="/home/danny/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
