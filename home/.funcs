@@ -13,6 +13,12 @@ activate() {
     source bin/activate
 }
 
+# Quick find
+f() {
+    echo "find . -iname \"*$1*\""
+    find . -iname "*$1*"
+}
+
 # word counter
 count() {
     cat $1 | grep -o "$2" | wc -l
