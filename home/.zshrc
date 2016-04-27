@@ -18,10 +18,10 @@ antigen bundle python
 antigen bundle pip 
 antigen bundle vundle 
 antigen bundle dannyzen/zsh-syntax-highlighting
-antigen bundle frodenas/cf-zsh-autocomplete-plugin
+antigen bundle dannyzen/cf-zsh-autocomplete-plugin
 antigen bundle zsh-users/zsh-completions
 antigen bundle djui/alias-tips
-
+# antigen bundle zsh-users/zsh-autosuggestions
 
 # OSX handling
 os=`uname -s`
