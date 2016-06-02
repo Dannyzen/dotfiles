@@ -1,12 +1,13 @@
 Hey there, I'm [Danny] (http://www.dannyrosen.net). I'm a Product Guy @ Pivotal Cloud Foundry and these are my [dotfiles] (http://dotfiles.github.com/).
 
 
-[![Build Status](https://travis-ci.org/Dannyzen/dotfiles.png?branch=master)](https://travis-ci.org/Dannyzen/dotfiles)
+[![Build Status](https://travis-ci.org/Dannyzen/dotfiles.png?branch=master)](https://travis-ci.org/Dannyzen/dotfiles) 
 
 
 I'm using:
 
-* [travis-ci] (https://travis-ci.org/Dannyzen/dotfiles) - for making sure my .zshrc has a clean stderr 
+* [travis-ci] (https://travis-ci.org/Dannyzen/dotfiles) - for making sure my .zshrc has a clean stderr (it does, but travis doesn't realize.)
+* [Antigen] (https://github.com/zsh-users/antigen) - For pulling down the things for my zsh
 
 * [homesick] (https://github.com/technicalpickles/homesick) - for bringing down the dotfiles
 
