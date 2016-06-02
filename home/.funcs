@@ -53,6 +53,13 @@ function iport() { ssh -L $2:$1:$2 $name@$gateev; }
 
 function info() { declare -f $1;}
 
+latest(){
+    dir=$BUILDPACKS/$1-buildpack/
+    cd $dir
+    git checkout develop && git pull origin develop
+    $DOTFILES/tools/get-tag.awk $dir
+}
+
 tests(){
     cd $BUILDPACKS/$1-buildpack/cf_spec/fixtures
 }
