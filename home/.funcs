@@ -50,6 +50,8 @@ push_it(){
 info() { declare -f $1;}
 
 latest(){
+    #usage: latest <buildpack_name>
+    #checksout latest and develop, updates, and uses ../tools/get-tag.awk to get the tag
     dir=$BUILDPACKS/$1-buildpack/
     cd $dir
     git checkout master &> /dev/null && git pull origin master &> /dev/null
@@ -59,8 +61,8 @@ latest(){
 }
 
 branch_push(){
+    #usage: branch_push <buildpack_name>
     #does a CF push to develop by default, else uses $2 as branch
-    branch=$2
 
     if [ -z ${2+x} ]; 
     then 
