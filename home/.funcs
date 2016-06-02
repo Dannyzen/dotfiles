@@ -47,18 +47,30 @@ push_it(){
 
 }
 
-#Should define host and change port
-#iport() host port
-function iport() { ssh -L $2:$1:$2 $name@$gateev; }
-
-function info() { declare -f $1;}
+info() { declare -f $1;}
 
 latest(){
     dir=$BUILDPACKS/$1-buildpack/
     cd $dir
-    git checkout develop && git pull origin develop
-    $DOTFILES/tools/get-tag.awk $dir
+    git checkout master &> /dev/null && git pull origin master &> /dev/null
+    echo "Master is on $($DOTFILES/tools/get-tag.awk $dir)"
+    git checkout develop &> /dev/null && git pull origin develop &> /dev/null
+    echo "Develop is on $($DOTFILES/tools/get-tag.awk $dir)"
 }
+
+branch_push(){
+    #does a CF push to develop by default, else uses $2 as branch
+    branch=$2
+
+    if [ -z ${2+x} ]; 
+    then 
+        cf push test -b "https://github.com/cloudfoundry/$1-buildpack#develop" --random-route
+    else 
+        cf push $1-test -b "https://github.com/cloudfoundry/$1-buildpack#$2" --random-route
+
+    fi
+}
+
 
 tests(){
     cd $BUILDPACKS/$1-buildpack/cf_spec/fixtures
