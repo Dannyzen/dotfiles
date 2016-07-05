@@ -65,3 +65,6 @@ map <silent> <leader>z :NERDTree<CR>
 
 set laststatus=2
 set t_Co=256
+
+" Experimental, lets see if i like it
+:inoremap <silent> <Esc> <Esc>`^
