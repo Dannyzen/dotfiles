@@ -53,23 +53,23 @@ latest(){
     #usage: latest <buildpack_name>
     #checksout latest and develop, updates, and uses ../tools/get-tag.awk to get the tag
     dir=$BUILDPACKS/$1-buildpack/
-    cd $dir
+    pushd $dir >> /dev/null
     git checkout master &> /dev/null && git pull origin master &> /dev/null
     echo "Master is on $($DOTFILES/tools/get-tag.awk $dir)"
     git checkout develop &> /dev/null && git pull origin develop &> /dev/null
     echo "Develop is on $($DOTFILES/tools/get-tag.awk $dir)"
+    echo "__$1-buildpack__ v"
+    popd >> /dev/null
 }
 
 branch_push(){
     #usage: branch_push <buildpack_name>
     #does a CF push to develop by default, else uses $2 as branch
-
     if [ -z ${2+x} ]; 
     then 
         cf push test -b "https://github.com/cloudfoundry/$1-buildpack#develop" --random-route
     else 
         cf push $1-test -b "https://github.com/cloudfoundry/$1-buildpack#$2" --random-route
-
     fi
 }
 

@@ -62,3 +62,6 @@ alias rs='rsync --compress -azP $1 $2'
 
 #cf
 alias cf-login='~/dev/scripts/cf-api.rb'
+
+#arch
+alias arch='cat $DOTFILES/oh-my-zsh/plugins/archlinux/README.md'

@@ -17,6 +17,7 @@ antigen bundle virtualenv
 antigen bundle python 
 antigen bundle pip 
 antigen bundle vundle 
+antigen bundle archlinux 
 antigen bundle dannyzen/zsh-syntax-highlighting
 antigen bundle dannyzen/cf-zsh-autocomplete-plugin
 antigen bundle zsh-users/zsh-completions
