@@ -1,5 +1,5 @@
 filetype plugin on
-
+    
 set rtp+=$DOTFILES/vundle/
 call vundle#rc()
 
@@ -42,7 +42,7 @@ nnoremap ; :
 nnoremap j gj
 nnoremap k gk
 syntax on
-set shiftwidth=4
+set shiftwidth=2
 set shiftround
 set showmatch
 set ignorecase
