@@ -65,3 +65,6 @@ alias cf-login='~/dev/scripts/cf-api.rb'
 
 #arch
 alias arch='cat $DOTFILES/oh-my-zsh/plugins/archlinux/README.md'
+
+#pcf->cf
+alias pcf='cf dev'
