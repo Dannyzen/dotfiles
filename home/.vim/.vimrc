@@ -42,7 +42,7 @@ nnoremap ; :
 nnoremap j gj
 nnoremap k gk
 syntax on
-set shiftwidth=2
+set shiftwidth=4
 set shiftround
 set showmatch
 set ignorecase
@@ -65,6 +65,3 @@ map <silent> <leader>z :NERDTree<CR>
 
 set laststatus=2
 set t_Co=256
-
-" Experimental, lets see if i like it
-:inoremap <silent> <Esc> <Esc>`^
