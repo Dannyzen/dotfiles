@@ -3,7 +3,7 @@
 	url = https://github.com/gmarik/vundle
 [submodule "zsh-syntax-highlighting"]
 	path = zsh-syntax-highlighting
-	url = https://github.com/zsh-users/zsh-syntax-highlighting
+	url = https://github.com/dannyzen/zsh-syntax-highlighting
 [submodule "todo.txt-cli"]
 	path = todo.txt-cli
 	url = https://github.com/dannyzen/todo.txt-cli.git
