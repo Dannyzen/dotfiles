@@ -15,7 +15,7 @@
 	url = https://github.com/jamesob/desk.git
 [submodule "cf"]
 	path = cf
-	url = https://github.com/frodenas/cf-zsh-autocomplete-plugin.git
+	url = git@github.com:Dannyzen/cf-zsh-autocomplete-plugin.git
 [submodule "zsh-completions"]
 	path = zsh-completions
 	url = https://github.com/zsh-users/zsh-completions
@@ -28,3 +28,6 @@
 [submodule "antigen"]
 	path = antigen
 	url = https://github.com/zsh-users/antigen.git
+[submodule "cf-zsh-autocomplete-plugin"]
+	path = cf-zsh-autocomplete-plugin
+	url = git@github.com:Dannyzen/cf-zsh-autocomplete-plugin.git
