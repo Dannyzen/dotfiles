@@ -25,7 +25,7 @@ antigen bundle djui/alias-tips
 # antigen bundle zsh-users/zsh-autosuggestions
 
 # OSX handling
-os=`uname -s`
+os=$(uname -s)
 case $os in
     "Darwin" )
         source ~/.profile
