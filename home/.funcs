@@ -77,3 +77,16 @@ branch_push(){
 tests(){
     cd $BUILDPACKS/$1-buildpack/cf_spec/fixtures
 }
+
+install_plugin(){
+  case $os in
+        "Darwin" )
+        arch="osx";;
+        "Linux" )
+        arch="lin"
+  esac
+  pushd 
+    unp ~/Downloads/appdog-cli-0.9.0-$1-$arch.tgz
+    cf uninstall-plugin appdog && cf install-plugin ~/Downloads/appdog-cli/appdog-cli -f
+  popd 
+}
