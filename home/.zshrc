@@ -29,7 +29,7 @@ os=$(uname -s)
 case $os in
     "Darwin" )
         source ~/.profile
-        export JAVA_HOME=/Library/Java/Home
+        export JAVA_HOME=$(/usr/libexec/java_home)
 esac
 
 # Editor
