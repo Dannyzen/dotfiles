@@ -50,16 +50,16 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
-    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
 else
-    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
+    PS1='${debian_chroot:+($debian_chroot)}\u@:\w\$ '
 fi
 unset color_prompt force_color_prompt
 
 # If this is an xterm set the title to user@host:dir
 case "$TERM" in
 xterm*|rxvt*)
-    PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\u@\h: \w\a\]$PS1"
+    PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\u@:\w\a\]$PS1"
     ;;
 *)
     ;;
@@ -142,7 +142,7 @@ export CLICOLOR=1
 #Using git-aware-prompt (https://github.com/jimeh/git-aware-prompt) - TODO make the ps1 a bit prettier with better defined color
 # export GITAWAREPROMPT=$HOME/.plugins/git-aware-prompt
 # source $GITAWAREPROMPT/main.sh 
-export PS1="[\@]\[$(tput bold)\]\[$(tput setaf 4)\]\u\[$(tput setaf 1)\]@\h:\[$(tput setaf 6)\]\w\[$txtcyn\]\$git_branch\[$txtylw\]\$git_dirty\[$txtrst\] \$ \[$(tput sgr0)\]"
+export PS1="[\]\[$(tput bold)\]\[$(tput setaf 4)\]\u\[$(tput setaf 1)\]:\[$(tput setaf 6)\]\w\[$txtcyn\]\$git_branch\[$txtylw\]\$git_dirty\[$txtrst\] \$ \[$(tput sgr0)\]"
 export EDITOR=/usr/bin/vim
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
