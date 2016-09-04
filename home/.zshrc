@@ -18,6 +18,7 @@ antigen bundle python
 antigen bundle pip 
 antigen bundle vundle 
 antigen bundle archlinux 
+antigen bundle nvm 
 antigen bundle dannyzen/zsh-syntax-highlighting
 antigen bundle dannyzen/cf-zsh-autocomplete-plugin
 antigen bundle zsh-users/zsh-completions
@@ -42,6 +43,9 @@ fi
 
 #something something compiled python
 zstyle ':completion:*:(all-|)files' ignored-patterns '*?.pyc'
+
+#something something case insensitivity
+zstyle ':completion:*' matcher-list '' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}'
 
 autoload -U compinit && compinit
 
@@ -92,5 +96,5 @@ export BUILDPACKS="$HOME/dev/buildpackery"
 #RVM sorcery
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
-export NVM_DIR="/home/danny/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm

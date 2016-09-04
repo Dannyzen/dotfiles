@@ -146,3 +146,6 @@ export PS1="[\]\[$(tput bold)\]\[$(tput setaf 4)\]\u\[$(tput setaf 1)\]:\[$(tput
 export EDITOR=/usr/bin/vim
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+export NVM_DIR="/home/danny/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm

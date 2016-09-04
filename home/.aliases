@@ -12,7 +12,9 @@ case $os in
 
     "Linux"  )
         alias ll='ls -latrh --color=auto';
-        alias pbcopy='xsel --clipboard --input';;
+        alias pbcopy='xsel --clipboard --input';
+        #arch open
+        alias see='xdg-open';;
 esac
 
 alias grep="grep --color=auto --exclude-dir=.cvs --exclude-dir=.git --exclude-dir=.hg --exclude-dir=.svn --ignore-case"
@@ -65,6 +67,3 @@ alias cf-login='~/dev/scripts/cf-api.rb'
 
 #arch
 alias arch='cat $DOTFILES/oh-my-zsh/plugins/archlinux/README.md'
-
-#pcf->cf
-alias pcf='cf dev'
