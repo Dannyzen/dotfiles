@@ -13,6 +13,7 @@ ZSH_THEME="af-magic"
 #Go Go Antigen
 source $DOTFILES/antigen/antigen.zsh
 antigen bundle git 
+antigen bundle ssh-agent 
 antigen bundle virtualenv 
 antigen bundle python 
 antigen bundle pip 
