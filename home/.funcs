@@ -49,44 +49,7 @@ push_it(){
 
 info() { declare -f $1;}
 
-latest(){
-    #usage: latest <buildpack_name>
-    #checksout latest and develop, updates, and uses ../tools/get-tag.awk to get the tag
-    dir=$BUILDPACKS/$1-buildpack/
-    pushd $dir >> /dev/null
-    git checkout master &> /dev/null && git pull origin master &> /dev/null
-    echo "Master is on $($DOTFILES/tools/get-tag.awk $dir)"
-    git checkout develop &> /dev/null && git pull origin develop &> /dev/null
-    echo "Develop is on $($DOTFILES/tools/get-tag.awk $dir)"
-    echo "__$1-buildpack__ v"
-    popd >> /dev/null
+iport(){
+ssh -L $2:$1:$2 $3@$4;
 }
 
-branch_push(){
-    #usage: branch_push <buildpack_name>
-    #does a CF push to develop by default, else uses $2 as branch
-    if [ -z ${2+x} ]; 
-    then 
-        cf push test -b "https://github.com/cloudfoundry/$1-buildpack#develop" --random-route
-    else 
-        cf push $1-test -b "https://github.com/cloudfoundry/$1-buildpack#$2" --random-route
-    fi
-}
-
-
-tests(){
-    cd $BUILDPACKS/$1-buildpack/cf_spec/fixtures
-}
-
-install_plugin(){
-  case $os in
-        "Darwin" )
-        arch="osx";;
-        "Linux" )
-        arch="lin"
-  esac
-  pushd 
-    unp ~/Downloads/appdog-cli-0.9.0-$1-$arch.tgz
-    cf uninstall-plugin appdog && cf install-plugin ~/Downloads/appdog-cli/appdog-cli -f
-  popd 
-}

@@ -2,9 +2,6 @@
 export DOTFILES=$HOME/.homesick/repos/dotfiles
 export DOTFILES_HOME=${DOTFILES}/home
 
-#dicey
-export PYTHONUSERBASE=$HOME/.local/lib/python2.7/site-packages/
-
 ZSH=$DOTFILES/oh-my-zsh
 
 #Theme
@@ -12,6 +9,7 @@ ZSH_THEME="af-magic"
 
 #Go Go Antigen
 source $DOTFILES/antigen/antigen.zsh
+antigen use oh-my-zsh
 antigen bundle git 
 antigen bundle ssh-agent 
 antigen bundle virtualenv 
@@ -21,10 +19,13 @@ antigen bundle vundle
 antigen bundle archlinux 
 antigen bundle nvm 
 antigen bundle dannyzen/zsh-syntax-highlighting
-antigen bundle dannyzen/cf-zsh-autocomplete-plugin
-antigen bundle zsh-users/zsh-completions
+antigen theme af-magic
 antigen bundle djui/alias-tips
+
 # antigen bundle zsh-users/zsh-autosuggestions
+# antigen bundle zsh-users/zsh-completions
+
+antigen apply
 
 # OSX handling
 os=$(uname -s)

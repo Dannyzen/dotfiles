@@ -60,7 +60,7 @@ alias bp='cd $BUILDPACKS'
 alias vtodo='vim ~/todos/todo.txt'
 
 alias hg='history | grep $1'
-alias rs='rsync --compress -azP $1 $2'
+alias rs='rsync --progress --compress -azP $1 $2'
 
 #cf
 alias cf-login='~/dev/scripts/cf-api.rb'
