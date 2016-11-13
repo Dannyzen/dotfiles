@@ -7,7 +7,7 @@ ZSH=$DOTFILES/oh-my-zsh
 #Theme
 ZSH_THEME="af-magic"
 
-#Go Go Antigen
+#Go Go Antigen -----------------------------------------
 source $DOTFILES/antigen/antigen.zsh
 antigen use oh-my-zsh
 antigen bundle git 
@@ -22,10 +22,14 @@ antigen bundle dannyzen/zsh-syntax-highlighting
 antigen theme af-magic
 antigen bundle djui/alias-tips
 
-# antigen bundle zsh-users/zsh-autosuggestions
+# trying it out with prettier colors
+export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=5"
+antigen bundle zsh-users/zsh-autosuggestions
+
 # antigen bundle zsh-users/zsh-completions
 
 antigen apply
+#Halt antigen! -----------------------------------------
 
 # OSX handling
 os=$(uname -s)
