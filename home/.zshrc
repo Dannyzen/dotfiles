@@ -23,7 +23,6 @@ antigen theme af-magic
 antigen bundle djui/alias-tips
 
 # trying it out with prettier colors
-export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=5"
 antigen bundle zsh-users/zsh-autosuggestions
 
 # antigen bundle zsh-users/zsh-completions
