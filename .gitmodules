@@ -25,6 +25,3 @@
 [submodule "antigen"]
 	path = antigen
 	url = https://github.com/zsh-users/antigen.git
-[submodule "cf-zsh-autocomplete-plugin"]
-	path = cf-zsh-autocomplete-plugin
-	url = git@github.com:Dannyzen/cf-zsh-autocomplete-plugin.git
