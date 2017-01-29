@@ -22,6 +22,7 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'bling/vim-airline'
 Bundle 'edkolev/promptline.vim'
 Bundle 'wellle/targets.vim'
+Bundle 'jmcantrell/vim-virtualenv'
 
 " Disable linting every save
 let g:pymode_lint_write = 0
