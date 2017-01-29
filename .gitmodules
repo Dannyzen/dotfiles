@@ -18,7 +18,7 @@
 	url = https://github.com/zsh-users/zsh-completions
 [submodule "oh-my-zsh"]
 	path = oh-my-zsh
-	url = git@github.com:Dannyzen/oh-my-zsh.git
+	url = https://github.com/dannyzen/oh-my-zsh
 [submodule "alias-tips"]
 	path = alias-tips
 	url = https://github.com/djui/alias-tips
