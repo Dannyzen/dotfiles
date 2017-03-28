@@ -1,4 +1,4 @@
-Hey there, I'm [Danny] (http://www.dannyrosen.net), and these are my [dotfiles] (http://dotfiles.github.com/).
+Hey there, I'm [Danny](http://www.dannyrosen.net), and these are my [dotfiles](http://dotfiles.github.com/).
 =====
 ![Build Status](https://travis-ci.org/Dannyzen/dotfiles.svg?branch=master "Build Status")
 
