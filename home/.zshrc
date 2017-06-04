@@ -9,26 +9,7 @@ ZSH_THEME="af-magic"
 
 #Go Go Antigen -----------------------------------------
 source $DOTFILES/antigen/antigen.zsh
-antigen use oh-my-zsh
-antigen bundle git 
-antigen bundle ssh-agent 
-antigen bundle virtualenv 
-antigen bundle python 
-antigen bundle pip 
-antigen bundle vundle 
-antigen bundle archlinux 
-antigen bundle nvm 
-antigen bundle dannyzen/zsh-syntax-highlighting
-antigen theme af-magic
-antigen bundle djui/alias-tips
-
-# trying it out with prettier colors
-antigen bundle zsh-users/zsh-autosuggestions
-
-# antigen bundle zsh-users/zsh-completions
-
-antigen apply
-#Halt antigen! -----------------------------------------
+antigen init .antigenrc
 
 # OSX handling
 os=$(uname -s)
@@ -87,6 +68,8 @@ fi
 #agent 
 zstyle :omz:plugins:ssh-agent agent-forwarding on
 
+#https://blog.packagecloud.io/eng/2017/02/21/set-environment-variable-save-thousands-of-system-calls/ told me to
+export TZ=:/etc/localtime
 
 # More paths
 # Go

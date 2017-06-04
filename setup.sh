@@ -1,9 +1,5 @@
 #!/bin/bash
 
-# link zsh syntax highlighting
-ln -s $DOTFILES/zsh-syntax-highlighting/ $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
-ln -s $DOTFILES/cf $ZSH_CUSTOM/plugins/cf
-
 # link app configs to dotfiles
 ln -s $DOTFILES/kde/share/apps/konsole $HOME/.kde/share/apps/konsole 
 ln -s $DOTFILES/kde/share/apps/yakuake $HOME/.kde/share/apps/yakuake 

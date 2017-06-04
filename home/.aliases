@@ -67,3 +67,6 @@ alias cf-login='~/dev/scripts/cf-api.rb'
 
 #arch
 alias arch='cat $DOTFILES/oh-my-zsh/plugins/archlinux/README.md'
+
+#wtf is running on my ports
+alias wtf='lsof -Pni'
