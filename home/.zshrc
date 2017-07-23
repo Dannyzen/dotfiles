@@ -31,7 +31,8 @@ fi
 zstyle ':completion:*:(all-|)files' ignored-patterns '*?.pyc'
 
 #something something case insensitivity
-zstyle ':completion:*' matcher-list '' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}'
+# zstyle ':completion:*' matcher-list '' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}'
+zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
 
 autoload -U compinit && compinit
 
@@ -78,8 +79,8 @@ export HEROKUPATH="/usr/local/heroku/bin"
 export OLDPATH=/usr/local/bin/:/usr/bin:/bin:/usr/share/ruby-rvm/bin:$HOME/.rbenv/bin:$PYTHONUSERBASE/bin
 export RVMPATH="$HOME/.rvm/bin"
 export NODE="$HOME/.npm-global/bin"
-export PATH="$PATH:$OLDPATH:$HOME:$GOPATH:$HEROKUPATH:$RVMPATH:$NODE"
-export BUILDPACKS="$HOME/dev/buildpackery"
+export HOMEBINS="$HOME/bin"
+export PATH="$PATH:$OLDPATH:$HOME:$GOPATH:$HEROKUPATH:$RVMPATH:$NODE:$HOMEBINS"
 
 #RVM sorcery
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
