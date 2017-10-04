@@ -70,3 +70,6 @@ alias arch='cat $DOTFILES/oh-my-zsh/plugins/archlinux/README.md'
 
 #wtf is running on my ports
 alias wtf='lsof -Pni'
+
+#vlc interactive mode
+alias vlci='vlc --intf rc'

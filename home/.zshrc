@@ -87,3 +87,9 @@ export PATH="$PATH:$OLDPATH:$HOME:$GOPATH:$HEROKUPATH:$RVMPATH:$NODE:$HOMEBINS"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/home/danny/testing/gcloud/google-cloud-sdk-168.0.0-linux-x86_64/google-cloud-sdk/path.zsh.inc' ]; then source '/home/danny/testing/gcloud/google-cloud-sdk-168.0.0-linux-x86_64/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/home/danny/testing/gcloud/google-cloud-sdk-168.0.0-linux-x86_64/google-cloud-sdk/completion.zsh.inc' ]; then source '/home/danny/testing/gcloud/google-cloud-sdk-168.0.0-linux-x86_64/google-cloud-sdk/completion.zsh.inc'; fi
