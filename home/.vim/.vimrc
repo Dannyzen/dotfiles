@@ -24,6 +24,7 @@ Bundle 'edkolev/promptline.vim'
 Bundle 'wellle/targets.vim'
 Bundle 'jmcantrell/vim-virtualenv'
 Bundle 'fatih/vim-go'
+Bundle 'jiangmiao/auto-pairs'
 
 " Disable linting every save
 let g:pymode_lint_write = 0
@@ -64,6 +65,9 @@ set noswapfile
 
 " Nerdtree map to leader z
 map <silent> <leader>z :NERDTree<CR>
+
+" :Gorun to leader ("\") to "\\r"
+map <silent> <leader>r :GoRun<CR>
 
 set laststatus=2
 set t_Co=256
