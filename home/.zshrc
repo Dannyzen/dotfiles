@@ -8,8 +8,9 @@ ZSH=$DOTFILES/oh-my-zsh
 ZSH_THEME="af-magic"
 
 #Go Go Antigen -----------------------------------------
-source $DOTFILES/antigen/antigen.zsh
-antigen init .antigenrc
+ANTIGEN_LOC="$DOTFILES/antigen/antigen.zsh"
+source ANTIGEN_LOC
+antigen init ANTIGEN_LOC
 
 # OSX handling
 os=$(uname -s)
