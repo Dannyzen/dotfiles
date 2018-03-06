@@ -53,3 +53,6 @@ iport(){
 ssh -L $2:$1:$2 $3@$4;
 }
 
+usb_reset(){
+  sudo for i in /sys/bus/pci/drivers/[uoex]hci_hcd/*:*; do   echo "${i##*/}" > "${i%/*}/unbind";   echo "${i##*/}" > "${i%/*}/bind"; done
+}
