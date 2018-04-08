@@ -74,7 +74,6 @@ zstyle :omz:plugins:ssh-agent agent-forwarding on
 export TZ=:/etc/localtime
 
 # More paths
-# Go
 export GOPATH=$HOME/go
 export HEROKUPATH="/usr/local/heroku/bin"
 export OLDPATH=/usr/local/bin/:/usr/bin:/bin:/usr/share/ruby-rvm/bin:$HOME/.rbenv/bin:$PYTHONUSERBASE/bin
@@ -91,6 +90,3 @@ export NVM_DIR="$HOME/.nvm"
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/home/danny/testing/gcloud/google-cloud-sdk-168.0.0-linux-x86_64/google-cloud-sdk/path.zsh.inc' ]; then source '/home/danny/testing/gcloud/google-cloud-sdk-168.0.0-linux-x86_64/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/home/danny/testing/gcloud/google-cloud-sdk-168.0.0-linux-x86_64/google-cloud-sdk/completion.zsh.inc' ]; then source '/home/danny/testing/gcloud/google-cloud-sdk-168.0.0-linux-x86_64/google-cloud-sdk/completion.zsh.inc'; fi
