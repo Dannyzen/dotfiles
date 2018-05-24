@@ -42,10 +42,6 @@ kde_alert(){
    sleep $1m; kdialog --title yo --passivepopup "$2" 10
 }
 
-push_it(){
-    cd ~/dev/buildpackery/ruby-buildpack/cf_spec/fixtures/sinatra_web_app; cf push "$(date)" 
-
-}
 
 info() { declare -f $1;}
 

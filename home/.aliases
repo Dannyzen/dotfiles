@@ -41,10 +41,6 @@ alias lg="git status -sb"
 alias vi="vim"
 alias homesick="$HOME/.homesick/repos/homeshick/bin/homeshick"
 
-#cf
-alias cf-login='ruby ~/dev/scripts/cf-api.rb'
-alias woof='echo "building appdog" && go build && cf uninstall-plugin appdog && cf install-plugin -f ~/dev/appdog-cli/appdog-cli'
-
 #for linovo
 alias bluetooth_off="echo disable | sudo tee /proc/acpi/ibm/bluetooth"
 alias bluetooth_on="echo enable | sudo tee /proc/acpi/ibm/bluetooth"
@@ -53,17 +49,9 @@ alias bluetooth_on="echo enable | sudo tee /proc/acpi/ibm/bluetooth"
 function volume { pactl set-sink-volume 0 $1 && echo "volume set to $1"}
 
 
-#todo
-alias t='$DOTFILES/todo.txt-cli/todo.sh' 
-
-alias bp='cd $BUILDPACKS'
-alias vtodo='vim ~/todos/todo.txt'
-
+# History grep and rs
 alias hg='history | grep $1'
 alias rs='rsync --progress --compress -azP $1 $2'
-
-#cf
-alias cf-login='~/dev/scripts/cf-api.rb'
 
 #arch
 alias arch='cat $DOTFILES/oh-my-zsh/plugins/archlinux/README.md'
