@@ -2,6 +2,8 @@ Hey there, I'm [Danny](http://www.dannyrosen.net), and these are my [dotfiles](h
 =====
 ![Build Status](https://travis-ci.org/Dannyzen/dotfiles.svg?branch=master "Build Status")
 
+![dotfile sourcing][sourceit.jpg]
+
 I'm using:
 
 * [travis-ci](https://travis-ci.org/Dannyzen/dotfiles) - for making sure my .zshrc has a clean stderr.
