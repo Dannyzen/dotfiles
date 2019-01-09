@@ -49,6 +49,11 @@ iport(){
 ssh -L $2:$1:$2 $3@$4;
 }
 
+giport(){
+  # takes instance id ($1), local port ($2), remote port ($3)
+  gcloud compute ssh $1 --zone=us-east1-b -- -L $2:localhost:$3
+}
+
 # usb_reset(){
 #   sudo for i in /sys/bus/pci/drivers/[uoex]hci_hcd/*:*; do   echo "${i##*/}" > "${i%/*}/unbind";   echo "${i##*/}" > "${i%/*}/bind"; done
 # }
