@@ -50,8 +50,8 @@ ssh -L $2:$1:$2 $3@$4;
 }
 
 giport(){
-  # takes instance id ($1), local port ($2), remote port ($3)
-  gcloud compute ssh $1 --zone=us-east1-b -- -L $2:localhost:$3
+  # takes instance id ($1), local port ($2), remote port ($3), zone ($4)
+  gcloud compute ssh $1 --zone=$4 -- -L $2:localhost:$3
 }
 
 # usb_reset(){
