@@ -18,3 +18,6 @@ chmod -w ~/.kde/share/apps/RecentDocuments/
 
 # Do wonderful things to vim
 vim +BundleInstall +qall
+
+#ANTIGEN GO
+antigen init .antigenrc
