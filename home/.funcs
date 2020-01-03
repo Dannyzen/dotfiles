@@ -57,3 +57,7 @@ giport(){
 # usb_reset(){
 #   sudo for i in /sys/bus/pci/drivers/[uoex]hci_hcd/*:*; do   echo "${i##*/}" > "${i%/*}/unbind";   echo "${i##*/}" > "${i%/*}/bind"; done
 # }
+
+pingup(){
+  until ping -c1 $1 >/dev/null 2>&1; do :; done
+}
