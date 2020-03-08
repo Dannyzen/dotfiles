@@ -80,7 +80,8 @@ export OLDPATH=/usr/local/bin/:/usr/bin:/bin:/usr/share/ruby-rvm/bin:$HOME/.rben
 export RVMPATH="$HOME/.rvm/bin"
 export NODE="$HOME/.npm-global/bin"
 export HOMEBINS="$HOME/bin"
-export PATH="$PATH:$OLDPATH:$HOME:$GOPATH:$HEROKUPATH:$RVMPATH:$NODE:$HOMEBINS"
+export LOCALBINS="$HOME/.local/bin"
+export PATH="$PATH:$OLDPATH:$HOME:$GOPATH:$HEROKUPATH:$RVMPATH:$NODE:$HOMEBINS:$LOCALBINS"
 
 #RVM sorcery
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"

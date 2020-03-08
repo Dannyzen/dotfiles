@@ -1,2 +1,2 @@
 "xte 'keydown Alt_L' 'keydown Control_L' 'key Down' 'keyup Alt_L' 'keyup Control_L'"
- b:10 + Release
+  Mod2+Mod4 + Tab

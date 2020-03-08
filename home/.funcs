@@ -61,3 +61,5 @@ giport(){
 pingup(){
   until ping -c1 $1 >/dev/null 2>&1; do :; done
 }
+
+sound_restart() { pulseaudio -k && pulseaudio -D}
