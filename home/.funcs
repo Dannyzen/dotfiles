@@ -16,7 +16,7 @@ activate() {
 # Quick find
 f() {
     echo "find . -iname \"*$1*\""
-    find . -iname "*$1*"
+    find . -iname "*$1" -exec ls -latr {} +k
 }
 
 # word counter
