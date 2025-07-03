@@ -1,93 +1,85 @@
-#env
+# --- Environment Variables ---
+# Set static variables first for clarity and speed.
 export DOTFILES=$HOME/.homesick/repos/dotfiles
 export DOTFILES_HOME=${DOTFILES}/home
+export EDITOR="vim"
+export VISUAL="vim"
+export GOPATH=$HOME/go
+export TZ=:/etc/localtime # This is a good optimization, keep it.
 
-ZSH=$DOTFILES/oh-my-zsh
-
-#Theme
-ZSH_THEME="af-magic"
-
-#Go Go Antigen -----------------------------------------
-export ANTIGEN_LOC="$DOTFILES/home/.antigenrc"
-source $DOTFILES/antigen/antigen.zsh
-antigen init $ANTIGEN_LOC
-
-# OSX handling
-os=$(uname -s)
-case $os in
-    "Darwin" )
-        source ~/.profile
-        export JAVA_HOME=$(/usr/libexec/java_home)
-esac
-
-# Editor
-if [[ -x $(which vim) ]]
-then
-    export EDITOR="vim"
-    export USE_EDITOR=$EDITOR
-    export VISUAL=$EDITOR
-fi
-
-#something something compiled python
-zstyle ':completion:*:(all-|)files' ignored-patterns '*?.pyc'
-
-#something something case insensitivity
-# zstyle ':completion:*' matcher-list '' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}'
-zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
-
-autoload -U compinit && compinit
-
-# History
-setopt APPEND_HISTORY
-setopt HIST_REDUCE_BLANKS
-setopt HIST_FIND_NO_DUPS
-setopt HIST_IGNORE_DUPS
-unsetopt share_history
+# --- Zsh History Settings ---
+HISTFILE=~/.zsh_history
 SAVEHIST=10000
 HISTSIZE=10000
+setopt APPEND_HISTORY HIST_IGNORE_DUPS HIST_FIND_NO_DUPS HIST_REDUCE_BLANKS
+setopt INTERACTIVE_COMMENTS GLOB_DOTS AUTO_CD
+unsetopt SHARE_HISTORY # This is clearer than 'setopt no_share_history'
 
-#noshare the history!
-setopt no_share_history
+# --- PATH Management ---
+# Use typeset -U to keep PATH unique and prevent duplicates, which speeds up command lookups.
+typeset -U path
+path=(
+    "$HOME/bin"
+    "$HOME/.local/bin"
+    "$GOPATH/bin"
+    "$HOME/.npm-global/bin" # For Node packages
+    "$PYTHONUSERBASE/bin" # For Python packages
+    "/usr/local/heroku/bin"
+    # System paths
+    /usr/local/bin
+    /usr/bin
+    /bin
+)
 
-#Interactive Comments
-setopt interactivecomments
-
-#Globdots - !. !!! 
-setopt globdots
-
-#Auto cd
-setopt autocd
-
-# Sourcing
-source $ZSH/oh-my-zsh.sh
-source $DOTFILES_HOME/.aliases
-source $DOTFILES_HOME/.funcs
-
-if [ -f $HOME/.shush ]; then
-    . $HOME/.shush
+# --- Zsh Completion System (Optimized) ---
+# This checks if the completion dump file is older than one day
+# and rebuilds it only when necessary, speeding up daily shell starts.
+autoload -U compinit
+if [ -n "$HOME/.zcompdump"(N.m+1) ]; then
+    compinit
+else
+    compinit -C
 fi
+zstyle ':completion:*:(all-|)files' ignored-patterns '*?.pyc'
+zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
 
-#agent 
-zstyle :omz:plugins:ssh-agent agent-forwarding on
+# --- Plugin Manager (Antigen) ---
+# IMPORTANT: This replaces the slow `source $ZSH/oh-my-zsh.sh` line.
+# Antigen will manage loading Oh My Zsh libraries, your theme, and plugins much faster.
+export ZSH="$DOTFILES/oh-my-zsh"
+export ANTIGEN_LOC="$DOTFILES/home/.antigenrc"
+source "$DOTFILES/antigen/antigen.zsh"
+antigen init "$ANTIGEN_LOC" # This reads your .antigenrc and sets up the prompt
 
-#https://blog.packagecloud.io/eng/2017/02/21/set-environment-variable-save-thousands-of-system-calls/ told me to
-export TZ=:/etc/localtime
+# --- Source Local Configs ---
+# Source these *after* plugins are loaded.
+source "$DOTFILES_HOME/.aliases"
+source "$DOTFILES_HOME/.funcs"
+[ -f "$HOME/.shush" ] && . "$HOME/.shush"
 
-# More paths
-export GOPATH=$HOME/go
-export HEROKUPATH="/usr/local/heroku/bin"
-export OLDPATH=/usr/local/bin/:/usr/bin:/bin:/usr/share/ruby-rvm/bin:$HOME/.rbenv/bin:$PYTHONUSERBASE/bin
-export RVMPATH="$HOME/.rvm/bin"
-export NODE="$HOME/.npm-global/bin"
-export HOMEBINS="$HOME/bin"
-export LOCALBINS="$HOME/.local/bin"
-export PATH="$PATH:$OLDPATH:$HOME:$GOPATH:$HEROKUPATH:$RVMPATH:$NODE:$HOMEBINS:$LOCALBINS"
+# --- Lazy Loading NVM (Node Version Manager) ---
+# NVM is very slow to load. This makes it load only when you actually use 'nvm', 'node', or 'npm'.
+export NVM_DIR="$HOME/.nvm"
+lazy_load_nvm() {
+  unset -f nvm node npm
+  [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+}
+nvm() { lazy_load_nvm; nvm "$@"; }
+node() { lazy_load_nvm; node "$@"; }
+npm() { lazy_load_nvm; npm "$@"; }
 
-#RVM sorcery
+# --- RVM & OS-Specific ---
+# Load RVM at the end. Its path will be added dynamically.
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
+# Load OS-specific settings. The 'uname' check is fast.
+if [[ "$(uname -s)" == "Darwin" ]]; then
+    source ~/.profile # Consider reviewing ~/.profile for slow commands
+    [ -z "$JAVA_HOME" ] && export JAVA_HOME=$(/usr/libexec/java_home)
+fi
 
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/home/danny/testing/gcloud/google-cloud-sdk-168.0.0-linux-x86_64/google-cloud-sdk/path.zsh.inc' ]; then source '/home/danny/testing/gcloud/google-cloud-sdk-168.0.0-linux-x86_64/google-cloud-sdk/path.zsh.inc'; fi
+# --- Google Cloud SDK ---
+# This is fine at the end as it just modifies the path.
+if [ -f '/home/danny/testing/gcloud/google-cloud-sdk-168.0.0-linux-x86_64/google-cloud-sdk/path.zsh.inc' ]; then
+    source '/home/danny/testing/gcloud/google-cloud-sdk-168.0.0-linux-x86_64/google-cloud-sdk/path.zsh.inc'
+fi

@@ -139,10 +139,11 @@ export PATH=/usr/local/bin/:$PATH
 # Bash Colors
 export CLICOLOR=1
 
-#Using git-aware-prompt (https://github.com/jimeh/git-aware-prompt) - TODO make the ps1 a bit prettier with better defined color
-# export GITAWAREPROMPT=$HOME/.plugins/git-aware-prompt
-# source $GITAWAREPROMPT/main.sh 
-export PS1="[\]\[$(tput bold)\]\[$(tput setaf 4)\]\u\[$(tput setaf 1)\]:\[$(tput setaf 6)\]\w\[$txtcyn\]\$git_branch\[$txtylw\]\$git_dirty\[$txtrst\] \$ \[$(tput sgr0)\]"
+# git-aware prompt
+parse_git_branch() {
+    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+export PS1="\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[31m\]\$(parse_git_branch)\[\033[00m\]\$ "
 export EDITOR=/usr/bin/vim
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
