@@ -175,7 +175,7 @@ setup_zsh() {
     # but we can try to pre-load plugins.
     if [ -f "$TARGET_DIR/antidote/antidote.zsh" ]; then
          log "Pre-loading Antidote plugins..."
-         zsh -c "source $TARGET_DIR/antidote/antidote.zsh && antidote load $TARGET_DIR/home/.zsh_plugins.txt"
+         zsh -c "compdef() { :; }; source $TARGET_DIR/antidote/antidote.zsh && antidote load $TARGET_DIR/home/.zsh_plugins.txt"
     fi
     
     success "Zsh setup complete."
