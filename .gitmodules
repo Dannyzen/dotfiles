@@ -1,9 +1,3 @@
-[submodule "vundle"]
-	path = vundle
-	url = https://github.com/gmarik/vundle
-[submodule "zsh-syntax-highlighting"]
-	path = zsh-syntax-highlighting
-	url = https://github.com/dannyzen/zsh-syntax-highlighting
 [submodule "todo.txt-cli"]
 	path = todo.txt-cli
 	url = https://github.com/dannyzen/todo.txt-cli.git
@@ -16,12 +10,6 @@
 [submodule "zsh-completions"]
 	path = zsh-completions
 	url = https://github.com/zsh-users/zsh-completions
-[submodule "oh-my-zsh"]
-	path = oh-my-zsh
-	url = https://github.com/dannyzen/oh-my-zsh
-[submodule "alias-tips"]
-	path = alias-tips
-	url = https://github.com/djui/alias-tips
-[submodule "antigen"]
-	path = antigen
-	url = https://github.com/zsh-users/antigen.git
+[submodule "antidote"]
+	path = antidote
+	url = https://www.github.com/mattmc3/antidote.git
