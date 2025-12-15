@@ -85,3 +85,9 @@ fi
 if [ -f '/home/danny/testing/gcloud/google-cloud-sdk-168.0.0-linux-x86_64/google-cloud-sdk/path.zsh.inc' ]; then
     source '/home/danny/testing/gcloud/google-cloud-sdk-168.0.0-linux-x86_64/google-cloud-sdk/path.zsh.inc'
 fi
+
+# --- Ghostty Integration Fixes ---
+# Disable OMZ termsupport to prevent conflicts with Ghostty shell integration.
+# This fixes "OSC 7 uri must contain a hostname" and "OSC 1 received and ignored" warnings.
+export DISABLE_AUTO_TITLE="true"
+omz_termsupport_cwd() { :; }

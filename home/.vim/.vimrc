@@ -1,24 +1,30 @@
 filetype plugin on
-    
-call plug#begin('~/.vim/plugged')
 
-" Plugins
-" Modern Basics
-Plug 'https://www.github.com/tpope/vim-commentary'      " Lightweight comments
-Plug 'https://www.github.com/itchyny/lightline.vim'     " Fast status line
-Plug 'https://www.github.com/lambdalisue/fern.vim'      " Async file explorer
+set rtp+=$DOTFILES/vundle/
+call vundle#rc()
 
-" Coding
-Plug 'https://www.github.com/tmsvg/pear-tree'           " Auto-pairs
-Plug 'https://www.github.com/edkolev/promptline.vim'
-Plug 'https://www.github.com/wellle/targets.vim'
-Plug 'https://www.github.com/jmcantrell/vim-virtualenv'
-Plug 'https://www.github.com/fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
-call plug#end()
+" Brief help
+" :BundleList          - list configured bundles
+" :BundleInstall(!)    - install(update) bundles
+" :BundleSearch(!) foo - search(or refresh cache first) for foo
+" :BundleClean(!)      - confirm(or auto-approve) removal of unused bundles
+"
+" see :h vundle for more details or wiki for FAQ
+" NOTE: comments after Bundle command are not allowed..
 
-" Lightline config
-let g:lightline = { 'colorscheme': 'wombat' }
+
+" let Vundle manage Vundle
+" required!
+Bundle 'VundleVim/Vundle'
+Bundle 'tomtom/tcomment_vim'
+Bundle 'scrooloose/nerdtree'
+Bundle 'bling/vim-airline'
+Bundle 'edkolev/promptline.vim'
+Bundle 'wellle/targets.vim'
+Bundle 'jmcantrell/vim-virtualenv'
+Bundle 'fatih/vim-go'
+Bundle 'jiangmiao/auto-pairs'
 
 " Disable linting every save
 let g:pymode_lint_write = 0
@@ -30,9 +36,7 @@ filetype on
 au VimLeave * if filereadable(".vim/.netrwhist")|call delete(".vim/.netrwhist")|endif
 nmap ,l :set list!
 set pastetoggle=<F2>
-set expandtab
-set tabstop=2 
-set backspace=indent,eol,start 
+set backspace=indent,eol,start
 set number
 nmap <silent> ,/ :nohlsearch<CR>
 nnoremap ; :
@@ -44,21 +48,23 @@ set shiftround
 set showmatch
 set ignorecase
 set smartcase
+set listchars=tab:>-,trail:-,nbsp:+
+set noexpandtab " Forces the tab key to insert a real tab
 set smarttab
 set hlsearch
 set incsearch
 
-set history=1000       
-set undolevels=1000   
+set history=1000
+set undolevels=1000
 set wildignore=*.swp,*.bak,*.pyc,*.class
 
-set noerrorbells     
+set noerrorbells
 
 set nobackup
 set noswapfile
 
-" Fern (Sidebar) map to leader z
-map <silent> <leader>z :Fern . -drawer -reveal=%<CR>
+" Nerdtree map to leader z
+map <silent> <leader>z :NERDTree<CR>
 
 " :Gorun to leader ("\") to "\\r"
 map <silent> <leader>r :GoRun<CR>
@@ -68,3 +74,8 @@ set t_Co=256
 
 " Experiment
 set t_ti= t_te=
+
+"Remove all trailing whitespace by pressing F5
+nnoremap <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar><CR>
+au BufRead,BufNewFile *.md setlocal textwidth=80
+
