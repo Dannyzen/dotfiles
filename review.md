@@ -12,7 +12,9 @@
     - [x] Dotfiles Cloning (Recursive)
     - [x] Symlink Management (Backups enabled)
     - [x] Plugin Setup (Vim headless, Zsh preload)
-- **Notes**: Script handles `fzf` binary path export in `.zshrc`, effectively replacing manual install needs for plugins that require it.
+- **Notes**: 
+    - Script handles `fzf` binary path export in `.zshrc`.
+    - **Update (Post-Deploy)**: Fixed `compdef` warnings during Antidote preload by mocking the function.
 
 ### 2. Configuration
 - **Zsh**:
