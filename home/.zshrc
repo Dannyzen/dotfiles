@@ -43,13 +43,15 @@ fi
 zstyle ':completion:*:(all-|)files' ignored-patterns '*?.pyc'
 zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
 
-# --- Plugin Manager (Antigen) ---
-# IMPORTANT: This replaces the slow `source $ZSH/oh-my-zsh.sh` line.
-# Antigen will manage loading Oh My Zsh libraries, your theme, and plugins much faster.
-export ZSH="$DOTFILES/oh-my-zsh"
-export ANTIGEN_LOC="$DOTFILES/home/.antigenrc"
-source "$DOTFILES/antigen/antigen.zsh"
-antigen init "$ANTIGEN_LOC" # This reads your .antigenrc and sets up the prompt
+# --- FZF Path ---
+# Add fzf binary to path (cloned by Antidote)
+export PATH="$HOME/.antidote/https-COLON--SLASH--SLASH-www.github.com-SLASH-junegunn-SLASH-fzf/bin:$PATH"
+
+# --- Plugin Manager (Antidote) ---
+# export ZSH="$DOTFILES/oh-my-zsh" # REMOVED: Managed by Antidote internal cache now.
+export ANTIDOTE_HOME="$HOME/.antidote"
+source "$DOTFILES/antidote/antidote.zsh"
+antidote load "$DOTFILES_HOME/.zsh_plugins.txt"
 
 # --- Source Local Configs ---
 # Source these *after* plugins are loaded.
@@ -66,7 +68,7 @@ lazy_load_nvm() {
 }
 nvm() { lazy_load_nvm; nvm "$@"; }
 node() { lazy_load_nvm; node "$@"; }
-npm() { lazy_load_nvm; npm "$@"; }
+#npm() { lazy_load_nvm; npm "$@"; }
 
 # --- RVM & OS-Specific ---
 # Load RVM at the end. Its path will be added dynamically.

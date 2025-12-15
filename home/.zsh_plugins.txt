@@ -1,0 +1,24 @@
+# Oh My Zsh Library & Defaults
+https://www.github.com/ohmyzsh/ohmyzsh path:lib
+
+# Plugins (formerly bundles)
+https://www.github.com/ohmyzsh/ohmyzsh path:plugins/git
+https://www.github.com/ohmyzsh/ohmyzsh path:plugins/virtualenv
+https://www.github.com/ohmyzsh/ohmyzsh path:plugins/python
+https://www.github.com/ohmyzsh/ohmyzsh path:plugins/pip
+https://www.github.com/ohmyzsh/ohmyzsh path:plugins/archlinux
+https://www.github.com/ohmyzsh/ohmyzsh path:plugins/kubectl
+
+# External Plugins
+https://www.github.com/dannyzen/zsh-syntax-highlighting
+https://www.github.com/zsh-users/zsh-autosuggestions
+https://www.github.com/dannyzen/zsh-completions
+https://www.github.com/ohmyzsh/ohmyzsh path:plugins/nvm
+
+# FZF (Manual load for integration)
+# We source specific files to ensure the repo is cloned, but avoid 'plugin not found' errors.
+https://www.github.com/junegunn/fzf path:shell/completion.zsh
+https://www.github.com/junegunn/fzf path:shell/key-bindings.zsh
+
+# Theme
+https://www.github.com/ohmyzsh/ohmyzsh path:themes/af-magic.zsh-theme

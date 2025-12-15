@@ -1,30 +1,24 @@
 filetype plugin on
     
-set rtp+=$DOTFILES/vundle/
-call vundle#rc()
+call plug#begin('~/.vim/plugged')
 
+" Plugins
+" Modern Basics
+Plug 'https://www.github.com/tpope/vim-commentary'      " Lightweight comments
+Plug 'https://www.github.com/itchyny/lightline.vim'     " Fast status line
+Plug 'https://www.github.com/lambdalisue/fern.vim'      " Async file explorer
 
-" Brief help
-" :BundleList          - list configured bundles
-" :BundleInstall(!)    - install(update) bundles
-" :BundleSearch(!) foo - search(or refresh cache first) for foo
-" :BundleClean(!)      - confirm(or auto-approve) removal of unused bundles
-"
-" see :h vundle for more details or wiki for FAQ
-" NOTE: comments after Bundle command are not allowed..
+" Coding
+Plug 'https://www.github.com/tmsvg/pear-tree'           " Auto-pairs
+Plug 'https://www.github.com/edkolev/promptline.vim'
+Plug 'https://www.github.com/wellle/targets.vim'
+Plug 'https://www.github.com/jmcantrell/vim-virtualenv'
+Plug 'https://www.github.com/fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
+call plug#end()
 
-" let Vundle manage Vundle
-" required! 
-Bundle 'VundleVim/Vundle'
-Bundle 'tomtom/tcomment_vim'
-Bundle 'scrooloose/nerdtree'
-Bundle 'bling/vim-airline'
-Bundle 'edkolev/promptline.vim'
-Bundle 'wellle/targets.vim'
-Bundle 'jmcantrell/vim-virtualenv'
-Bundle 'fatih/vim-go'
-Bundle 'jiangmiao/auto-pairs'
+" Lightline config
+let g:lightline = { 'colorscheme': 'wombat' }
 
 " Disable linting every save
 let g:pymode_lint_write = 0
@@ -63,8 +57,8 @@ set noerrorbells
 set nobackup
 set noswapfile
 
-" Nerdtree map to leader z
-map <silent> <leader>z :NERDTree<CR>
+" Fern (Sidebar) map to leader z
+map <silent> <leader>z :Fern . -drawer -reveal=%<CR>
 
 " :Gorun to leader ("\") to "\\r"
 map <silent> <leader>r :GoRun<CR>
