@@ -76,8 +76,10 @@ node() { lazy_load_nvm; node "$@"; }
 
 # Load OS-specific settings. The 'uname' check is fast.
 if [[ "$(uname -s)" == "Darwin" ]]; then
-    source ~/.profile # Consider reviewing ~/.profile for slow commands
-    [ -z "$JAVA_HOME" ] && export JAVA_HOME=$(/usr/libexec/java_home)
+    [ -f ~/.profile ] && source ~/.profile # Consider reviewing ~/.profile for slow commands
+    if /usr/libexec/java_home &>/dev/null; then
+        [ -z "$JAVA_HOME" ] && export JAVA_HOME=$(/usr/libexec/java_home)
+    fi
 fi
 
 # --- Google Cloud SDK ---
